@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    
+    font-family:'Ubuntu', sans-serif;
+
+    background-color: lightgray;
+}
+
+.header{
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+
+    background-color: white;
+    box-shadow:0px 3px 2px #00000036;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20%;
+    height:100px;
+
+    background-color:#cc3629;
+    border-radius:0px 15px;
+}
+.Ltext{
+    margin-left: 5%;
+    
+    color: #ffffff;    
+    
+    font-family: 'Fjalla One', sans-serif;
+    font-size: calc(30px + 1.75vw);
+    text-shadow:0px 2px 1px #000000;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 60%;
+}
+.navbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20%;
+
+    font-size: 16px;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 10%;
+    height: 50%;
+
+    border-left:2px solid #cc3629;
+}
+
+.main{
+    background-color: lightgray;
+    margin-top: 100px;
+    height: 100%;
+    width: 75%;
+}
+.product_img{
+    width: 75%;
+    margin: 2.5% 0 0 2.5%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.product_main_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.product_price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 20%;
+    margin: 2.5% 2.5% 0 2.5%;
+
+    border-radius: 10px;
+    background-color: white;
+}
+.pp_name{
+    margin-top: 7.5%;
+}
+.pp_color{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 5%;
+
+    width: 60%;
+}
+#pp_color0{
+    width: 12.5%;
+    height: 80%;
+    margin-top: 3%;
+
+    background-color: aqua;
+}
+#pp_color1{
+    width: 10%;
+    height: 80%;
+    margin-top: 3%;
+
+    background-color: aqua;
+}
+#pp_color2{
+    width: 10%;
+    height: 80%;
+    margin-top: 3%;
+
+    background-color: aqua;
+}
+.product_text{
+    width: 95%;
+    margin: 2.5% 0 0 2.5%;
+
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.product_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin: 2.5% 0 2.5% 2.5%;
+}
+.pselect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 20%;
+    
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.ps{
+    width: 70%;
+    padding: 5% 0;
+}
+#ps0{
+    border-bottom:2px solid #cc3629;
+}
+#ps1{
+    border-bottom:2px solid #cc3629;
+}
+#ps2{
+    border-bottom:2px solid #cc3629;
+}
+#ps3{
+    border-bottom:2px solid #cc3629;
+}
+.pstext{
+    width: 77.35%;
+    
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.psline{
+    width: 0.15%;
+    background-color: #cc3629;
+}
+.pst_H{
+    display: flex;
+
+    width: 100%;
+    height: 15%;
+
+    background-color: #00000036;
+}
+.ps_alt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    font-size: 14px;
+}
+/*.pst_info{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}*/
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+
+    background-color: white;
+}
+.contact{
+    width: 30%;
+}

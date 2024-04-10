@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background: url(https://alekongroup.ru/wp-content/uploads/2021/07/10-secret-seo-tips-from-the-pros-marketcrest-2048x1338-1.jpg);
+}
+
+.logo_navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  margin: 50px 0px 0px 50px;
+  width: 250px;
+  height: 250px;
+  border-radius: 360px;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+
+.navigation {
+  margin-left: 150px;
+  width: 1000px;
+  height: 75px;
+  border-radius: 0px 0px 30px 30px;
+  background: #00000070;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.info_company {
+  margin-top: 20px;
+  color: #fff;
+  font-family:sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contacts {
+  margin-top: 20px;
+  color: #fff;
+  font-family:sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.login {
+  margin-top: 20px;
+  color: #fff;
+  font-family:sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.number_call {
+  margin-top: 25px;
+  color: #fff;
+  font-family:sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.name {
+  margin-top: 480px;
+  height: 200px;
+  background: #00000070;
+  color: #fff;
+}
+
+.name_text {
+  margin: 60px 0px 0px 60px;
+  font-family:sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.container_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 1080px;
+  background: #d9d9d9;
+}
+
+.SEO_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  height: 450px;
+}
+
+.SEO_text {
+  margin-top: 5px;
+  text-align: center;
+  font-family:sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #000;
+}
+
+.SEO_img {
+  margin-top: 10px;
+  width: 250px;
+  height: 400px;
+  border: 1px solid #000;
+}
+
+.marketing_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  height: 475px;
+}
+
+.marketing_text {
+  text-align: center;
+  font-family:sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #000;
+}
+
+.marketing_img {
+  margin-top: 15px;
+  width: 250px;
+  height: 400px;
+  border: 1px solid #000;
+}
+
+.button {
+  margin-top: 50px;
+  display: flex;
+  width: 175px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  align-items: center;
+}
+
+.button_text {
+  margin-left: 27px;
+  display: flex;
+  font-size: 20px;
+  color: #000;
+}
+
+.container_main {
+  display: flex;
+  flex-direction: column;
+}
+
+.population_new {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0px 0px 50px;
+}
+
+.population_new_img {
+  margin-top: 50px;
+  width: 420px;
+  height: 560px;
+}
+
+.population_new_text {
+  margin-left: 250px;
+  width: 500px;
+  height: 560px;
+  color: #fff;
+  font-family:'Gill Sans';
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container_second_new {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px 0px 0px 50px;
+}
+
+.second1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.second1_img {
+  width: 300px;
+  height: 225px;
+  background: #d9d9d9;
+}
+
+.second1_text {
+  width: 300px;
+  height: 150px;
+  color: #000;
+  background: #fff;
+
+  text-align: center;
+  font-family:sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.second2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.second2_img {
+  width: 300px;
+  height: 225px;
+  background: #d9d9d9;
+}
+
+.second2_text {
+  width: 300px;
+  height: 150px;
+  color: #000;
+  background: #fff;
+
+  text-align: center;
+  font-family:sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.second3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.second3_img {
+  width: 300px;
+  height: 225px;
+  background: #d9d9d9;
+}
+
+.second3_text {
+  width: 300px;
+  height: 150px;
+  color: #000;
+  background: #fff;
+
+  text-align: center;
+  font-family:sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.price_coment {
+  display: flex;
+  flex-direction: row;
+  margin-top: 200px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+}
+
+.price_text {
+  margin-left: 350px;
+  color: #fff;
+  font-family:sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.price_info {
+  font-family:sans-serif;
+  display: flex;
+  width: 1000px;
+  height: 550px;
+  justify-content: center;
+  align-items:center;
+  border: 1px solid #000;
+  background: #fff;
+  font-size: 30px;
+}
+
+.coment {
+  display: flex;
+  flex-direction: column;
+}
+
+.coment_text {
+  margin-left: 150px;
+  color: #fff;
+  font-family:sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.coment_info {
+  font-family:sans-serif;
+  margin-left: 52px;
+  display: flex;
+  width: 500px;
+  height: 550px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  background: #fff;
+}
+
+.logo_contacts {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  height: 450px;
+  background: #d9d9d9;
+}
+
+.footer_logo {
+  margin: 50px 0px 0px 50px;
+  width: 250px;
+  height: 250px;
+  border-radius: 360px;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+.footer_contacts {
+  margin: 50px 0px 0px 150px;
+}
+
+.contacts_text {
+  font-size: 20px;
+  font-family:sans-serif;
+}
+
+.map {
+  margin: 25px 0px 0px 250px;
+}

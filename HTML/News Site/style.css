@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Ubuntu', sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items:center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: #ececec;
+    padding-bottom: 50px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 20%;
+    height:100px;
+    background-color:#cc3629;
+    border-radius:0px 15px;
+}
+.Lsvg{
+    margin-left: 11.5%;
+}
+.Ltext{
+    margin-left: 5%;
+    color: #ffffff;    
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
+    text-shadow:0px 2px 1px #000000;
+}
+.Hmenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 65%;
+}
+.Hreg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:50px;
+    width: 15%;
+    border-left:2px solid #cc3629;
+}
+.Register{
+    padding-top: 5px;
+}
+.Login{
+    padding-top: 5px;
+}
+
+.news_left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+.news_right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+}
+.newsL{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 50px 0 0 2.5%;
+    border-radius: 12.5px;
+    background-color: #ffffff;
+    box-shadow:0px 3px 2px #00000036;
+}
+.newsR{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 50px 2.5% 0 0;
+    border-radius: 12.5px;
+    background-color: #ffffff;
+    box-shadow:0px 3px 2px #00000036;
+}
+.Nname{
+    display: flex;
+    text-align: center;
+    font-size:15px;
+    width: 80%;
+    padding: 15px 0px 5px 0px;
+    border-bottom:2px solid #90909080;
+}
+.Nimg{
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top:7px;
+    width: 90%;
+}
+.Ntext{
+    display: flex;
+    justify-content: start;
+    font-size:14px;
+    padding: 20px 5px 10px 5px;
+    margin-left: 15px;
+}
+.Nbutton{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+.NB{
+    width: 20%;
+    text-align: center;
+    color:#fff;
+    font-size:12px;
+    padding: 5px;
+    border-radius: 4.5px;
+    background-color:#cc3629;
+    text-decoration-line:underline;
+}
+
+.Fmenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    font-size: 17px;
+}
+.HM{
+    font-size: 17px;
+}
+.FHM{
+    margin-top: 10px;
+    font-size: 15px;
+}
+.Fmap{
+    display: flex;
+    align-items: center;
+    width: 30%;
+}

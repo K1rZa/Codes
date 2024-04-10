@@ -1,0 +1,556 @@
+@import url("https://fonts.cdnfonts.com/css/futura-pt");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.test {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  opacity: 0.5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  width: 1920px;
+  background-color: #f9f9f9;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 1920px;
+  height: 70px;
+  flex-shrink: 0;
+  background: #fff;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+.HN0 {
+  color: var(--1, #000000);
+  /* Основной/подчеркнутый */
+  font-family: "Futura PT";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+.HN {
+  margin-left: 40px;
+  color: var(--, #2f2222);
+  font-family: "Futura PT";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+
+  margin-left: 40px;
+}
+#Cimg {
+  margin-top: 4px;
+}
+#Cnumber {
+  margin-left: 10px;
+  color: var(--1, #5d71dd);
+  font-family: "Futura PT";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.news {
+  display: flex;
+  flex-direction: row;
+
+  margin-left: 260px;
+  margin-top: 40px;
+}
+.main_news {
+  display: flex;
+  flex-direction: column;
+}
+.popular_news {
+  display: flex;
+  flex-direction: column;
+
+  width: 320px;
+
+  margin-left: 40px;
+}
+.MN0 {
+  width: 1040px;
+  height: 280px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+}
+.MN1 {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 40px;
+}
+.MN10 {
+  width: 680px;
+  height: 400px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+}
+.MN11 {
+  width: 320px;
+  height: 400px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #5d71dd;
+
+  margin-left: 40px;
+}
+.MN2 {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 40px;
+}
+.MN20 {
+  width: 320px;
+  height: 400px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.15);
+
+  background-image: url(Resources/R3.png);
+}
+.MN2_0 {
+  width: 320px;
+  height: 400px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.15);
+
+  background-image: url(Resources/R6.png);
+}
+.MN21 {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 40px;
+}
+.MN210 {
+  width: 680px;
+  height: 180px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+}
+.MN211 {
+  width: 680px;
+  height: 180px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+
+  margin-top: 40px;
+}
+.kat_date {
+  display: flex;
+  flex-direction: row;
+
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.kat {
+  width: 111px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: rgba(93, 113, 221, 0.05);
+
+  color: #5d71dd;
+
+  /* Мелкий текст */
+  font-family: "Futura PT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.date {
+  color: rgba(47, 34, 34, 0.4);
+
+  text-align: right;
+  /* Мелкий текст */
+  font-family: "Futura PT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-left: 768px;
+}
+.katmn1 {
+  width: 111px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: rgba(93, 113, 221, 0.05);
+
+  color: #5d71dd;
+
+  /* Мелкий текст */
+  font-family: "Futura PT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.datemn1 {
+  color: rgba(47, 34, 34, 0.4);
+
+  text-align: right;
+  /* Мелкий текст */
+  font-family: "Futura PT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-left: 408px;
+}
+.kat0 {
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #7d8de4;
+
+  color: #fff;
+
+  /* Мелкий текст */
+  font-family: "Futura PT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-left: 30px;
+  margin-top: 40px;
+}
+.date0 {
+  color: #fff;
+
+  text-align: right;
+  /* Мелкий текст */
+  font-family: "Futura PT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-right: 209px;
+  margin-top: 170px;
+}
+.date1 {
+  color: rgba(47, 34, 34, 0.4);
+
+  text-align: right;
+  /* Мелкий текст */
+  font-family: "Futura PT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-left: 408px;
+}
+
+.kat_long {
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+
+  color: #fff;
+
+  /* Мелкий текст */
+  font-family: "Futura PT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-left: 30px;
+  margin-top: 40px;
+}
+.date_long {
+  color: #fff;
+
+  text-align: right;
+  /* Мелкий текст */
+  font-family: "Futura PT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-right: 209px;
+  margin-top: 139px;
+}
+
+.name0 {
+  width: 878px;
+  color: #2f2222;
+
+  /* Заголовок */
+  font-family: "Futura PT";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+
+  margin-left: 40px;
+  margin-top: 30px;
+}
+.text0 {
+  display: flex;
+  width: 880px;
+  height: 70px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: rgba(47, 34, 34, 0.4);
+
+  /* Основной */
+  font-family: "Futura PT";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.name1 {
+  width: 600px;
+  color: #2f2222;
+
+  /* Заголовок */
+  font-family: "Futura PT";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+
+  margin-left: 40px;
+  margin-top: 30px;
+}
+.text1 {
+  width: 600px;
+  color: rgba(47, 34, 34, 0.4);
+
+  /* Основной */
+  font-family: "Futura PT";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.name2 {
+  width: 260px;
+  color: #fff;
+
+  /* Заголовок */
+  font-family: "Futura PT";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.name3 {
+  width: 600px;
+  color: #2f2222;
+
+  /* Заголовок */
+  font-family: "Futura PT";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.PN {
+  color: var(--, #2f2222);
+  /* Заголовок */
+  font-family: "Futura PT";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+.PN0 {
+  margin-top: 20px;
+}
+.PNname {
+  color: var(--, #2f2222);
+  /* Основной */
+  font-family: "Futura PT";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-top: 10px;
+}
+.PNdate {
+  color: #e5e4e4;
+
+  /* Основной */
+  font-family: "Futura PT";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-top: 10px;
+}
+.line {
+  width: 320px;
+  height: 1px;
+  background: rgba(47, 34, 34, 0.1);
+
+  margin-top: 10px;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 320px;
+  height: 271px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+
+  margin-top: 40px;
+}
+.Stext {
+  width: 260px;
+  color: #2f2222;
+
+  text-align: center;
+  /* Заголовок */
+  font-family: "Futura PT";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+
+  margin-top: 40px;
+}
+.email {
+  display: flex;
+  width: 260px;
+  height: 49px;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: var(--2, #f5f5f5);
+
+  margin-top: 30px;
+  align-items: center;
+}
+.emtext {
+  color: rgba(47, 34, 34, 0.4);
+
+  /* Основной */
+  font-family: "Futura PT";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-left: 30px;
+}
+.button {
+  display: flex;
+  width: 260px;
+  height: 50px;
+  flex-direction: row;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: var(--1, #5d71dd);
+
+  margin-top: 21px;
+  justify-content: center;
+  align-items: center;
+}
+.btext {
+  color: #fff;
+
+  /* Основной */
+  font-family: "Futura PT";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-right: 10px;
+  margin-top: -3px;
+}
+
+.num1{
+  color: #5D71DD; font-size: 18px; font-family: Futura PT; font-weight: 400; text-decoration: underline; word-wrap: break-word;
+}
+.num0{
+  color: black; font-size: 18px; font-family: Futura PT; font-weight: 400; word-wrap: break-word;
+}
+.number_page{
+  width: 334px; height: 43px; justify-content: center; align-items: center; gap: 20px; display: inline-flex;
+}
+.Pbutton{
+  padding-left: 16px; padding-right: 16px; padding-top: 10px; padding-bottom: 10px; background: rgba(93, 113, 221, 0.05); border-radius: 8px; justify-content: center; align-items: center; gap: 10px; display: flex; 
+}
+.page{
+  margin:100px 0 0 633px; width: 334px; height: 43px; justify-content: center; align-items: center; gap: 20px; display: inline-flex;
+}
+.svg_num{
+  width: 10px; height: 10px; padding-left: 2.30px; padding-right: 2.30px; justify-content: center; align-items: center; display: flex;
+}
