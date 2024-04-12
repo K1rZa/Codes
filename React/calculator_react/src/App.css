@@ -1,5 +1,27 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+}
+.MainBox{
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  height: 100vh;
+}
+.ResultBox{
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 200px;
+}
+.PrintResult{
+  background-color: red;
+	margin: 4px;
+
 }
 
 .App-logo {

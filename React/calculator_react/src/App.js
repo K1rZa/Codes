@@ -7,7 +7,7 @@ function Numbers(props) {
 		return (
 			<Button
 				onClick={e => {
-					if (props.data != '0') props.onClick(props.data + e.target.innerHTML)
+					if (props.data !== '0') props.onClick(props.data + e.target.innerHTML)
 					else props.onClick(e.target.innerHTML)
 				}}
 				key={number}
@@ -55,22 +55,8 @@ function App() {
 	}
 	return (
 		<div className='App'>
-			<Box
-				display='flex'
-				flexDirection='column'
-				justifyContent='center'
-				alignItems='center'
-				h='100vh'
-			>
-				<Box
-					display='flex'
-					gap='5px'
-					flexDirection='column'
-					justifyContent='center'
-					alignItems='center'
-					w='200px'
-					h='200px'
-				>
+			<Box className='MainBox'>
+				<Box className='ResultBox'>
 					<Box display='flex' w='100%' justifyContent='between'>
 						<Text
 							display='flex'
@@ -84,7 +70,14 @@ function App() {
 						>
 							{counts}
 						</Text>
-						<Text w='fit-content' h='38px' textColor='tomato'>
+						<Text
+							ml='260px'
+							mt='5px'
+							position='absolute'
+							w='40px'
+							h='30px'
+							textColor='tomato'
+						>
 							{result}
 						</Text>
 					</Box>
@@ -113,8 +106,7 @@ function App() {
 							/>
 						</Box>
 						<Button
-							bg='tomato'
-							m='4px'
+							className='PrintResult'
 							onClick={() => {
 								setResult(eval(counts))
 							}}
