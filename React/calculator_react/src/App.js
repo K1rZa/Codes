@@ -1,3 +1,5 @@
+/* eslint-disable no-eval */
+/* eslint-disable no-useless-escape */
 import { useState } from 'react'
 import { Box, Text, Button } from '@chakra-ui/react'
 import './App.css'
