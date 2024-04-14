@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<button type="button" onclick="window.myDialog.show()">
+			Просто открыть
+		</button>
+		<button type="button" onclick="window.myDialog.showModal()">
+			Открыть как модалку
+		</button>
+		<dialog id="myDialog">
+			🖖 Живи долго и процветай!
+			<button type="button" onclick="window.myDialog.close()">
+				Закрыть с помощью JavaScript
+			</button>
+		</dialog>
+
+		<button type="button" onclick="window.testDialog.show()">
+			Просто открыть test
+		</button>
+		<button type="button" onclick="window.testDialog.showModal()">
+			Открыть как модалку test
+		</button>
+		<dialog id="testDialog">
+			🖖 Живи долго и процветай!
+			<button type="button" onclick="window.testDialog.close()">
+				Закрыть с помощью JavaScript
+			</button>
+		</dialog>
+
+		<script src="script.js"></script>
+	</body>
+</html>

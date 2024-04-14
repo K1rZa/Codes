@@ -1,0 +1,6 @@
+#myDialog::backdrop{
+    background-color: blue;
+}
+#testDialog::backdrop{
+    background-color: aqua;
+}
