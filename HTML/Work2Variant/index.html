@@ -1,71 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/mainStyles.css">
-    <link rel="stylesheet" href="./styles/indexStyle.css">
-    <title>Главная Страница</title>
-</head>
-<body>
-    <div class="header">
-        <a href="index.html" class="logo">
-            Лого
-        </a>
-        <div class="nav">
-            <div class="navbuttons">
-                <a href="catalog.html" class="navbutton">
-                    Каталог
-                </a>
-                <a href="blogs.html" class="navbutton">
-                    Блоги
-                </a>
-                <a href="info.html" class="navbutton">
-                    О нас
-                </a>
-            </div>
-            <div class="search">
-                Поиск
-            </div>
-        </div>
-        <div class="cart">
-            Корзина
-        </div>
-        <a href="account.html" class="login">
-            Войти
-        </a>
-    </div>
-    <div class="main">
-        
-    </div>
-    <div class="footer">
-        <div class="nameCO">
-            <div class="name">
-                Наименование 
-            </div>
-            <div class="info">
-                Описание
-            </div>
-        </div>
-        <div class="navFooter">
-            <div class="navbutton">
-                Каталог
-            </div>
-            <div class="navbutton">
-                Блоги
-            </div>
-            <div class="navbutton">
-                О нас
-            </div>
-        </div>
-        <div class="contacts">
-            <div class="contact">
-                Контакты
-            </div>
-            <div class="map">
-                Карта
-            </div>
-        </div>
-    </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/mainStyles.css" />
+		<link rel="stylesheet" href="./styles/indexStyle.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<title>Главная Страница</title>
+	</head>
+	<body>
+		<div class="header">
+			<a href="index.html" class="logo"> Лого </a>
+			<div class="nav">
+				<div class="navbuttons">
+					<a href="catalog.html" class="navbutton"> Каталог </a>
+					<a href="blogs.html" class="navbutton"> Блоги </a>
+					<a href="info.html" class="navbutton"> О нас </a>
+				</div>
+				<div class="search">Поиск</div>
+			</div>
+			<div class="cart">Корзина</div>
+			<a href="account.html" class="login"> Войти </a>
+		</div>
+		<div class="main">
+			<div class="mainName">
+				<div class="nameCompany"></div>
+				<img src="" alt="" class="nameIMG" />
+			</div>
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">slide1</div>
+					<div class="swiper-slide">slide2</div>
+					<div class="swiper-slide">slide3</div>
+					<div class="swiper-slide">slide4</div>
+				</div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+			<div class="News">
+                Новости
+				<div class="newInfo">
+					<div class="newtext">Текст новости</div>
+					<div class="newbuttons">
+						<div class="likebut">Лайк</div>
+						<div class="morebut">Больше</div>
+					</div>
+				</div>
+				<div class="newInfo">
+					<div class="newtext">Текст новости</div>
+					<div class="newbuttons">
+						<div class="likebut">Лайк</div>
+						<div class="morebut">Больше</div>
+					</div>
+				</div>
+				<div class="newInfo">
+					<div class="newtext">Текст новости</div>
+					<div class="newbuttons">
+						<div class="likebut">Лайк</div>
+						<div class="morebut">Больше</div>
+					</div>
+				</div>
+			</div>
+			<div class="relations">
+				<div class="relate" id="rel1">
+					<div class="rateR">Баллы</div>
+					<div class="nicknameR">Ник</div>
+					<div class="textR">Текст</div>
+				</div>
+				<div class="relate" id="rel2">
+					<div class="rateR">Баллы</div>
+					<div class="nicknameR">Ник</div>
+					<div class="textR">Текст</div>
+				</div>
+				<div class="relate" id="rel3">
+					<div class="rateR">Баллы</div>
+					<div class="nicknameR">Ник</div>
+					<div class="textR">Текст</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="nameCO">
+				<div class="name">Наименование</div>
+				<div class="info">Описание</div>
+			</div>
+			<div class="navFooter">
+				<div class="navbutton">Каталог</div>
+				<div class="navbutton">Блоги</div>
+				<div class="navbutton">О нас</div>
+			</div>
+			<div class="contacts">
+				<div class="contact">Контакты</div>
+				<div class="map">Карта</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="./scripts/script.js"></script>
+	</body>
 </html>

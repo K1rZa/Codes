@@ -1,0 +1,55 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.News{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5%;
+    width: 60%;
+}
+.newInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0.5% 0 0.5% 0;
+}
+.newtext{
+    width: 80%;
+}
+.newbuttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+}
+.relations{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 2.5%;
+    border: 2px solid black;
+}
+.relate{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    background-color: aqua;
+    margin: 1%;
+}
+#rel2{
+    margin-left: 40%;
+}
+
+.swiper{
+    width: 70%;
+    height: 300px;
+    margin-top: 2.5%;
+}
+
