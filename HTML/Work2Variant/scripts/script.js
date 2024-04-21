@@ -3,6 +3,7 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 2,
 	direction: 'horizontal',
 	loop: true,
+	spaceBetween: '2.5%',
 
 	// Navigation arrows
 	navigation: {
