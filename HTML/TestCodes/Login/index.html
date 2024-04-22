@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<style>
+			label {
+				display: block;
+			}
+
+			input[type='submit'],
+			label {
+				margin-top: 1rem;
+			}
+		</style>
+		<div>
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" />
+		</div>
+
+		<div>
+			<label for="pass">Password (8 characters minimum):</label>
+			<input type="password" id="pass" name="password" minlength="8" required />
+		</div>
+
+		<input id="butt" type="submit" value="Sign in" />
+
+		<div id="textPrint"></div>
+
+		<script>
+			let userLogin = 'testlogin'
+			let userPassword = 'testtesttest'
+
+			let butt = document.getElementById('butt')
+			butt.onclick = function () {
+				let inputLogin = document.getElementById('username').value
+				let inputPassword = document.getElementById('pass').value
+
+				let textPrint = document.getElementById('textPrint')
+				if (userLogin == inputLogin && userPassword == inputPassword) {
+					console.log(inputLogin)
+					console.log(inputPassword)
+					console.log('Hello!')
+					textPrint.innerHTML = 'Hello!'
+				} else {
+					console.log(inputLogin)
+					console.log(inputPassword)
+					console.log('Error!')
+					textPrint.innerHTML = 'Error!'
+				}
+			}
+		</script>
+	</body>
+</html>
