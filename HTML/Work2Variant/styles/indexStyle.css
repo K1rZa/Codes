@@ -74,9 +74,10 @@
 	justify-content: space-between;
 	width: 100%;
 	height: 75px;
-	margin: 0.5% 0 0.5% 0;
+	margin: 0 0 0 0;
 	font-size: 20px;
-	border: 2px dashed black;
+/*	box-shadow: 0px 1px 2px 0px black;*/
+	border-bottom: 3px solid black;
 }
 .newtext {
 	width: 90%;
@@ -103,17 +104,27 @@
 .relations {
 	display: flex;
 	flex-direction: column;
-	width: 60%;
+	width: 55%;
 	margin-top: 2.5%;
-	border: 2px solid black;
 }
 .relate {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
 	width: 60%;
-	background-color: aqua;
-	margin: 1%;
+	margin: 2.5%;
+	font-size: 20px;
+}
+.rateR{
+	width: 100%;
+}
+.nicknameR{
+	width: 100%;
+}
+.textR{
+	width: 99%;
+	height: 100%;
+	font-size: 16px;
 }
 #rel2 {
 	margin-left: 40%;
