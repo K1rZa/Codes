@@ -126,3 +126,142 @@
     height: 80%;
     border: 2px dashed black;
 }
+
+@media screen and (max-width: 970px){
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 135vw;
+    margin-top: 2.5%;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+.mainBlog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 75vw;
+    max-height: 60vh;
+}
+.mainBlog-img{
+    width: 100%;
+    height: 60%;
+    background-color: gray;
+}
+.mainBlog-text{
+    width: 95%;
+    height: 28%;
+}
+.mainBlog-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 8%;
+}
+.likeBut{
+    width: 5%;
+    height: 80%;
+    border: 2px dashed black;
+}
+.forwardBut{
+    width: 5%;
+    height: 80%;
+    border: 2px dashed black;
+}
+.commentArea{
+    width: 70%;
+    height: 85%;
+    margin-right: 5%;
+	border-radius: 30px;
+	background-color: rgb(240, 240, 240);
+}
+.readMoreBut{
+    width: 5%;
+    height: 80%;
+    border: 2px dashed black;
+}
+
+.column-newBlog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 310px;
+    height: 80vw;
+}
+.newBlog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vw;
+    max-height: 50vh;
+}
+.newBlog-img{
+    width: 100%;
+    height: 75%;
+    background-color: gray;
+}
+.newBlog-img:hover{
+    opacity: 0;
+    width: 100%;
+    height: 75%;
+    background-color: gray;
+}
+.newBlog-text{
+    z-index: -1;
+    position: absolute;
+    width: 90%;
+    height: 29.5vw;
+    margin-top: -6%;
+    border: 2px solid red;
+}
+.newBlog-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1%;
+    height: 10%;
+    width: 97.5%;
+    gap: 1%;
+}
+.newLikeBut{
+    width: 4%;
+    height: 90%;
+    border: 2px dashed black;
+}
+.newForwardBut{
+    width: 4%;
+    height: 90%;
+    border: 2px dashed black;
+}
+.newCommentArea{
+    display: none;
+    width: 70%;
+    height: 70%;
+    margin-right: 2%;
+	border-radius: 30px;
+	background-color: rgb(240, 240, 240);
+}
+.newReadMoreBut{
+    width: 4%;
+    height: 90%;
+    border: 2px dashed black;
+}
+}

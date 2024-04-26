@@ -18,23 +18,23 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	width: 50%;
+	width: 70%;
 	min-width: 320px;
 	height: 30vw;
 }
 #nameCompany1 {
-	font-size: clamp(24px, 3.5vw, 70px);
+	font-size: clamp(36px, 3.5vw, 70px);
 }
 #nameCompany2 {
 	text-align: center;
 	width: 60%;
 	margin-top: 1%;
-	font-size: clamp(12px, 1vw, 20px);
+	font-size: clamp(14px, 1vw, 20px);
 }
 .nameIMG {
 	width: 100%;
 	height: 35vw;
-	min-height: 35vh;
+	min-height: 45vh;
 	background-color: grey;
 }
 .slider {
@@ -42,7 +42,7 @@
 	flex-direction: column;
 	align-items: center;
 	width: 77.5%;
-	min-width: 310px;
+	min-width: 320px;
 	height: auto;
 	margin-top: 5%;
 }
@@ -50,15 +50,15 @@
 	margin-top: 2.5%;
 	width: 100%;
 	height: 25vw;
-	min-height: 17.5vh;
+	min-height: 20vh;
 }
 #swiperText1 {
-	font-size:clamp(20px, 3vw, 60px);
+	font-size:clamp(34px, 3vw, 60px);
 }
 #swiperText2 {
 	text-align: center;
 	width: 60%;
-	font-size:clamp(10px, 1vw, 18px);
+	font-size:clamp(12px, 1vw, 18px);
 	margin-top: 1%;
 }
 .swiper-slide {
@@ -70,7 +70,7 @@
 	margin-top: 2.5%;
 	width: 60%;
 	min-width: 280px;
-	font-size:clamp(16px, 2vw, 40px);
+	font-size:clamp(24px, 2vw, 40px);
 }
 .newInfo {
 	display: flex;
@@ -82,7 +82,7 @@
 	height: 3.5vw;
 	min-height: 3vh;
 	margin: 0 0 0 0;
-	font-size: clamp(13px, 1vw, 20px);
+	font-size: clamp(14px, 1vw, 20px);
 	/*	box-shadow: 0px 1px 2px 0px black;*/
 	border-bottom: 3px solid black;
 }
@@ -112,7 +112,7 @@
 	display: flex;
 	flex-direction: column;
 	width: 55%;
-	min-width: 280px;
+	min-width: 310px;
 	margin-top: 2.5%;
 }
 .relate {
@@ -122,7 +122,7 @@
 	width: 60%;
 	/* min-width: 280px; */
 	margin: 2.5%;
-	font-size:clamp(12px, 1vw, 20px);
+	font-size:clamp(16px, 1vw, 20px);
 }
 .rateR{
 	width: 100%;
@@ -133,9 +133,153 @@
 .textR{
 	width: 99%;
 	height: 100%;
-	font-size:clamp(10px, 1vw, 16px);
+	font-size:clamp(14px, 1vw, 16px);
 }
 #rel2 {
 	/* margin-left: clamp(0%, 1vw, 40%); */
 	margin-left: 40%;
+}
+
+@media screen and (max-width: 1024px){
+.main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+.mainName {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	margin-top: 0.5%;
+}
+.nameCompany {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 70%;
+	min-width: 320px;
+	height: 30vw;
+}
+#nameCompany1 {
+	font-size: clamp(36px, 3.5vw, 70px);
+}
+#nameCompany2 {
+	text-align: center;
+	width: 60%;
+	margin-top: 1%;
+	font-size: clamp(14px, 1vw, 20px);
+}
+.nameIMG {
+	width: 100%;
+	height: 35vw;
+	min-height: 45vh;
+	background-color: grey;
+}
+.slider {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+	min-width: 320px;
+	height: auto;
+	margin-top: 5%;
+}
+.swiper {
+	margin-top: 2.5%;
+	width: 100%;
+	height: 25vw;
+	min-height: 20vh;
+}
+#swiperText1 {
+	font-size:clamp(34px, 3vw, 60px);
+}
+#swiperText2 {
+	text-align: center;
+	width: 60%;
+	font-size:clamp(12px, 1vw, 18px);
+	margin-top: 1%;
+}
+.swiper-slide {
+	background-color: grey;
+}
+.News {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2.5%;
+	width: 80%;
+	min-width: 280px;
+	font-size:clamp(24px, 2vw, 40px);
+}
+.newInfo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	/* min-width: 280px; */
+	height: 3.5vw;
+	min-height: 3vh;
+	margin: 0 0 0 0;
+	font-size: clamp(14px, 1vw, 20px);
+	/*	box-shadow: 0px 1px 2px 0px black;*/
+	border-bottom: 3px solid black;
+}
+.newtext {
+	width: 90%;
+	height: 100%;
+}
+.newbuttons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 10%;
+	height: 50%;
+}
+.likebut {
+	width: 35%;
+	height: 100%;
+	border: 2px dashed black;
+}
+.morebut {
+	width: 35%;
+	height: 100%;
+	border: 2px dashed black;
+}
+.relations {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 90%;
+	min-width: 310px;
+	margin-top: 2.5%;
+}
+.relate {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 60%;
+	/* min-width: 280px; */
+	margin: 2.5%;
+	font-size:clamp(16px, 1vw, 20px);
+}
+.rateR{
+	width: 100%;
+}
+.nicknameR{
+	width: 100%;
+}
+.textR{
+	width: 99%;
+	height: 100%;
+	font-size:clamp(14px, 1vw, 16px);
+}
+#rel2 {
+	margin-left: 2.5%;
+}
 }
