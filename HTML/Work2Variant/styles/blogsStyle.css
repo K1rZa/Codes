@@ -1,0 +1,126 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 500px;
+    margin-top: 2.5%;
+}
+.mainBlog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+}
+.mainBlog-img{
+    width: 100%;
+    height: 60%;
+    background-color: gray;
+}
+.mainBlog-text{
+    width: 95%;
+    height: 28%;
+}
+.mainBlog-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 12%;
+}
+.likeBut{
+    width: 6%;
+    height: 80%;
+    border: 2px dashed black;
+}
+.forwardBut{
+    width: 6%;
+    height: 80%;
+    border: 2px dashed black;
+}
+.commentArea{
+    width: 70%;
+    height: 65%;
+    margin-right: 5%;
+	border-radius: 30px;
+	background-color: rgb(240, 240, 240);
+}
+.readMoreBut{
+    width: 6%;
+    height: 80%;
+    border: 2px dashed black;
+}
+
+.column-newBlog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 39%;
+    height: 100%;
+}
+.newBlog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 49%;
+}
+.newBlog-img{
+    width: 100%;
+    height: 75%;
+    background-color: gray;
+}
+.newBlog-img:hover{
+    opacity: 0;
+    width: 100%;
+    height: 75%;
+    background-color: gray;
+}
+.newBlog-text{
+    z-index: -1;
+    position: absolute;
+    width: 31%;
+    height: 18%;
+    border: 2px solid red;
+}
+.newBlog-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 20%;
+}
+.newLikeBut{
+    width: 7%;
+    height: 80%;
+    border: 2px dashed black;
+}
+.newForwardBut{
+    width: 7%;
+    height: 80%;
+    border: 2px dashed black;
+}
+.newCommentArea{
+    width: 70%;
+    height: 70%;
+    margin-right: 2%;
+	border-radius: 30px;
+	background-color: rgb(240, 240, 240);
+}
+.newReadMoreBut{
+    width: 7%;
+    height: 80%;
+    border: 2px dashed black;
+}
