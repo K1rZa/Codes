@@ -29,6 +29,15 @@
     width: 39%;
     height: 100%;
 }
+#nameCompany-text1{
+    font-size: 70px;
+}
+#nameCompany-text2{
+	text-align: center;
+	width: 80%;
+	margin-top: 1%;
+	font-size: 20px;
+}
 .mapCompany{
     width: 59%;
     height: 100%;
@@ -58,7 +67,7 @@
     height: 100%;
 }
 .soc{
-    width: 11%;
-    height: 60%;
+    width: 9.5%;
+    height: 50%;
     border: 2px dashed black;
 }

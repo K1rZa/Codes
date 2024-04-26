@@ -1,0 +1,206 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+.products {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+.color {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-top: 1.75%;
+}
+.paste {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-top: 1.75%;
+}
+.tool {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-top: 1.75%;
+}
+.grunt {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-top: 1.75%;
+}
+.nameBlock {
+	display: flex;
+	align-items: center;
+	width: 72.5%;
+}
+.altnameBlock {
+	display: flex;
+	align-items: center;
+	width: 63%;
+}
+.buttonBlock {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-top: 0.5%;
+}
+.altbuttonBlock {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-top: 0.5%;
+}
+.ProductRow {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	width: 80%;
+    height: 25vw;
+	margin-top: 0.75%;
+}
+.P {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 27.5%;
+	height: 100%;
+	background-color: lightgrey;
+}
+.PIMG {
+	width: 100%;
+    height: 75%;
+	background-color: gray;
+}
+.PTEXT {
+	width: 80%;
+    height: 15%;
+}
+.PCART {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 80%;
+    height: 10%;
+}
+.pcartLike{
+    width: 11%;
+    height: 80%;
+    border: 2px dashed black;
+}
+.pcartCart{
+    width: 11%;
+    height: 80%;
+    margin-right: 40%;
+    border: 2px dashed black;
+}
+.pcartBUY{
+    width: 30%;
+    height: 80%;
+    border: 2px dashed black;
+}
+.acces {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-top: 1.75%;
+}
+.swiper{
+    width: 67.5%;
+    height: 20vw;
+}
+.swiper-slide {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	margin-top: 0.75%;
+	background-color: lightgrey;
+}
+.accesPIMG {
+	width: 50%;
+	height: 100%;
+	background-color: gray;
+}
+.accesPTEXT {
+	width: 37.5%;
+	height: 90%;
+}
+.accesPCART {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	justify-content: space-between;
+	width: 10%;
+	height: 80%;
+}
+.accespcartLike{
+    width: 35%;
+    height: 14%;
+    border: 2px dashed black;
+}
+.accespcartCart{
+    width: 35%;
+    height: 14%;
+    margin-top: -100%;
+    border: 2px dashed black;
+}
+.accespcartBUY{
+    width: 70%;
+    height: 17.5%;
+    border: 2px dashed black;
+}
+.palit {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-top: 1.75%;
+}
+.palitProductRow {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	width: 70%;
+	margin-top: 0.75%;
+}
+.palitP {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+	height: 100px;
+	background-color: darkgrey;
+}
+.palitPIMG {
+	width: 100%;
+	height: 100%;
+	background-color: red;
+}
+.palitPCART {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	width: 90%;
+	background-color: cadetblue;
+}

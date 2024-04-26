@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/mainStyles.css">
-    <link rel="stylesheet" href="./styles/catalogStyle.css">
-    <title>Каталог</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/mainStyles.css" />
+		<link rel="stylesheet" href="./styles/catalogStyle.css" />
+		<link
+			rel="stylesheet"
+			href="./styles/swiper-bundle.min.css"
+		/>
+		<title>Каталог</title>
+	</head>
+	<body>
 		<div class="header">
 			<a href="index.html" class="logo"> Лого </a>
 			<div class="nav">
@@ -16,69 +20,282 @@
 					<a href="blogs.html" class="navbutton"> Блоги </a>
 					<a href="info.html" class="navbutton"> О нас </a>
 				</div>
-				<div class="search"><p class = searchtext>поиск...</p><div class = searchbutton></div></div>
+				<div class="search">
+					<p class="searchtext">поиск...</p>
+					<div class="searchbutton"></div>
+				</div>
 			</div>
 			<div class="cart"></div>
 			<div class="like"></div>
 			<a href="account.html" class="login"> Войти </a>
 		</div>
-    <div class="main">
-        <div class="filters">
-
-        </div>
-        <div class="products">
-            <div class="product">
-                <div class="productIMG">
-                    Изображение
-                </div>
-                <div class="productTEXT">
-                    Текст
-                </div>
-                <div class="productPrice">
-                    Цена
-                </div>
-                <div class="productButtons">
-                    <div class="likebut">
-                        Лайк
-                    </div>
-                    <div class="cartbut">
-                        Корзина
-                    </div>
-                    <div class="buybut">
-                        Купить
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="nameCO">
-            <div class="name">
-                Наименование 
-            </div>
-            <div class="info">
-                Описание
-            </div>
-        </div>
-        <div class="navFooter">
-            <div class="navbutton">
-                Каталог
-            </div>
-            <div class="navbutton">
-                Блоги
-            </div>
-            <div class="navbutton">
-                О нас
-            </div>
-        </div>
-        <div class="contacts">
-            <div class="contact">
-                Контакты
-            </div>
-            <div class="map">
-                Карта
-            </div>
-        </div>
-    </div>
-</body>
+		<div class="main">
+			<div class="filters"></div>
+			<div class="products">
+				<div class="color">
+					<div class="nameBlock">
+						<p>Краски</p>
+					</div>
+					<div class="ProductRow">
+						<div class="P">
+							<div class="PIMG">
+								<p>Изображение</p>
+							</div>
+							<div class="PTEXT">
+								<p>Текст</p>
+							</div>
+							<div class="PCART">
+								<div class="pcartLike"></div>
+								<div class="pcartCart"></div>
+								<div class="pcartBUY"></div>
+							</div>
+						</div>
+						<div class="P">
+							<div class="PIMG">
+								<p>Изображение</p>
+							</div>
+							<div class="PTEXT">
+								<p>Текст</p>
+							</div>
+							<div class="PCART">
+								<div class="pcartLike"></div>
+								<div class="pcartCart"></div>
+								<div class="pcartBUY"></div>
+							</div>
+						</div>
+						<div class="P">
+							<div class="PIMG">
+								<p>Изображение</p>
+							</div>
+							<div class="PTEXT">
+								<p>Текст</p>
+							</div>
+							<div class="PCART">
+								<div class="pcartLike"></div>
+								<div class="pcartCart"></div>
+								<div class="pcartBUY"></div>
+							</div>
+						</div>
+					</div>
+					<div class="buttonBlock">
+						<p>Показать еще</p>
+					</div>
+				</div>
+				<div class="paste">
+					<div class="nameBlock">
+						<p>Текстурные пасты</p>
+					</div>
+					<div class="ProductRow">
+						<div class="P">
+							<div class="PIMG">
+								<p>Изображение</p>
+							</div>
+							<div class="PTEXT">
+								<p>Текст</p>
+							</div>
+							<div class="PCART">
+								<div class="pcartLike"></div>
+								<div class="pcartCart"></div>
+								<div class="pcartBUY"></div>
+							</div>
+						</div>
+						<div class="P">
+							<div class="PIMG">
+								<p>Изображение</p>
+							</div>
+							<div class="PTEXT">
+								<p>Текст</p>
+							</div>
+							<div class="PCART">
+								<div class="pcartLike"></div>
+								<div class="pcartCart"></div>
+								<div class="pcartBUY"></div>
+							</div>
+						</div>
+						<div class="P">
+							<div class="PIMG">
+								<p>Изображение</p>
+							</div>
+							<div class="PTEXT">
+								<p>Текст</p>
+							</div>
+							<div class="PCART">
+								<div class="pcartLike"></div>
+								<div class="pcartCart"></div>
+								<div class="pcartBUY"></div>
+							</div>
+						</div>
+					</div>
+					<div class="buttonBlock">
+						<p>Показать еще</p>
+					</div>
+				</div>
+				<div class="tool">
+					<div class="nameBlock">
+						<p>Инструменты</p>
+					</div>
+					<div class="ProductRow">
+						<div class="P">
+							<div class="PIMG">
+								<p>Изображение</p>
+							</div>
+							<div class="PTEXT">
+								<p>Текст</p>
+							</div>
+							<div class="PCART">
+								<div class="pcartLike"></div>
+								<div class="pcartCart"></div>
+								<div class="pcartBUY"></div>
+							</div>
+						</div>
+						<div class="P">
+							<div class="PIMG">
+								<p>Изображение</p>
+							</div>
+							<div class="PTEXT">
+								<p>Текст</p>
+							</div>
+							<div class="PCART">
+								<div class="pcartLike"></div>
+								<div class="pcartCart"></div>
+								<div class="pcartBUY"></div>
+							</div>
+						</div>
+						<div class="P">
+							<div class="PIMG">
+								<p>Изображение</p>
+							</div>
+							<div class="PTEXT">
+								<p>Текст</p>
+							</div>
+							<div class="PCART">
+								<div class="pcartLike"></div>
+								<div class="pcartCart"></div>
+								<div class="pcartBUY"></div>
+							</div>
+						</div>
+					</div>
+					<div class="buttonBlock">
+						<p>Показать еще</p>
+					</div>
+				</div>
+				<div class="grunt">
+					<div class="nameBlock">
+						<p>Грунты</p>
+					</div>
+					<div class="ProductRow">
+						<div class="P">
+							<div class="PIMG">
+								<p>Изображение</p>
+							</div>
+							<div class="PTEXT">
+								<p>Текст</p>
+							</div>
+							<div class="PCART">
+								<div class="pcartLike"></div>
+								<div class="pcartCart"></div>
+								<div class="pcartBUY"></div>
+							</div>
+						</div>
+						<div class="P">
+							<div class="PIMG">
+								<p>Изображение</p>
+							</div>
+							<div class="PTEXT">
+								<p>Текст</p>
+							</div>
+							<div class="PCART">
+								<div class="pcartLike"></div>
+								<div class="pcartCart"></div>
+								<div class="pcartBUY"></div>
+							</div>
+						</div>
+						<div class="P">
+							<div class="PIMG">
+								<p>Изображение</p>
+							</div>
+							<div class="PTEXT">
+								<p>Текст</p>
+							</div>
+							<div class="PCART">
+								<div class="pcartLike"></div>
+								<div class="pcartCart"></div>
+								<div class="pcartBUY"></div>
+							</div>
+						</div>
+					</div>
+					<div class="buttonBlock">
+						<p>Показать еще</p>
+					</div>
+				</div>
+				<div class="acces">
+					<div class="altnameBlock">
+						<p>Грунты</p>
+					</div>
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="accesPIMG">
+									<p>Изображение</p>
+								</div>
+								<div class="accesPTEXT">
+									<p>Текст</p>
+								</div>
+								<div class="accesPCART">
+								<div class="accespcartLike"></div>
+								<div class="accespcartCart"></div>
+								<div class="accespcartBUY"></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="accesPIMG">
+									<p>Изображение</p>
+								</div>
+								<div class="accesPTEXT">
+									<p>Текст</p>
+								</div>
+								<div class="accesPCART">
+								<div class="accespcartLike"></div>
+								<div class="accespcartCart"></div>
+								<div class="accespcartBUY"></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="accesPIMG">
+									<p>Изображение</p>
+								</div>
+								<div class="accesPTEXT">
+									<p>Текст</p>
+								</div>
+								<div class="accesPCART">
+								<div class="accespcartLike"></div>
+								<div class="accespcartCart"></div>
+								<div class="accespcartBUY"></div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="nameCO">
+				<div class="name">Наименование</div>
+				<div class="info">Описание</div>
+			</div>
+			<div class="navFooter">
+				<div class="navbutton">Каталог</div>
+				<div class="navbutton">Блоги</div>
+				<div class="navbutton">О нас</div>
+			</div>
+			<div class="contacts">
+				<div class="contact">Контакты</div>
+				<div class="map">Карта</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="./scripts/scriptCatalog.js"></script>
+	</body>
 </html>
