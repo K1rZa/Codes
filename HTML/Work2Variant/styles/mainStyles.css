@@ -30,6 +30,7 @@ a {
 }
 .nav {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	align-items: center;
 	width: 55%;
@@ -81,19 +82,17 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 2.25%;
+	width: 5%;
 	height: 50%;
 	margin-left: 1%;
-	border: 2px dashed black;
 }
 .like {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 2.25%;
+	width: 5%;
 	height: 50%;
 	margin-left: 0.5%;
-	border: 2px dashed black;
 }
 .login {
 	display: flex;

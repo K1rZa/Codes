@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 26vw;
+    height: 35vw;
     margin-top: 2.5%;
 }
 .container{
@@ -21,11 +21,13 @@
     justify-content: center;
     width: 60%;
     height: 100%;
+    		box-shadow: 0px 3px 2px #00000036;
 }
 .mainBlog-img{
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 60%;
-    background-color: gray;
 }
 .mainBlog-text{
     width: 95%;
@@ -37,17 +39,15 @@
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    height: 12%;
+    height: 9%;
 }
 .likeBut{
     width: 6%;
     height: 80%;
-    border: 2px dashed black;
 }
 .forwardBut{
     width: 6%;
     height: 80%;
-    border: 2px dashed black;
 }
 .commentArea{
     width: 70%;
@@ -55,11 +55,11 @@
     margin-right: 5%;
 	border-radius: 30px;
 	background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(219, 219, 219);
 }
 .readMoreBut{
     width: 6%;
     height: 80%;
-    border: 2px dashed black;
 }
 
 .column-newBlog{
@@ -69,6 +69,7 @@
     justify-content: space-between;
     width: 39%;
     height: 100%;
+    gap: 5%;
 }
 .newBlog{
     display: flex;
@@ -77,24 +78,25 @@
     justify-content: space-between;
     width: 100%;
     height: 49%;
+    		box-shadow: 0px 3px 2px #00000036;
 }
 .newBlog-img{
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 75%;
-    background-color: gray;
+    background-color: white;
 }
 .newBlog-img:hover{
     opacity: 0;
     width: 100%;
     height: 75%;
-    background-color: gray;
 }
 .newBlog-text{
     z-index: -1;
     position: absolute;
     width: 31%;
-    height: 9vw;
-    border: 2px solid red;
+    height: 12.5vw;
 }
 .newBlog-buttons{
     display: flex;
@@ -102,17 +104,15 @@
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    height: 20%;
+    height: 15%;
 }
 .newLikeBut{
     width: 7%;
     height: 80%;
-    border: 2px dashed black;
 }
 .newForwardBut{
     width: 7%;
     height: 80%;
-    border: 2px dashed black;
 }
 .newCommentArea{
     width: 70%;
@@ -120,11 +120,11 @@
     margin-right: 2%;
 	border-radius: 30px;
 	background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(219, 219, 219);
 }
 .newReadMoreBut{
     width: 7%;
     height: 80%;
-    border: 2px dashed black;
 }
 
 @media screen and (max-width: 970px){
@@ -151,13 +151,12 @@
     justify-content: center;
     width: 100%;
     min-width: 320px;
-    height: 75vw;
-    max-height: 60vh;
+    height: 100vw;
+    max-height: 55vh;
 }
 .mainBlog-img{
     width: 100%;
     height: 60%;
-    background-color: gray;
 }
 .mainBlog-text{
     width: 95%;
@@ -174,12 +173,10 @@
 .likeBut{
     width: 5%;
     height: 80%;
-    border: 2px dashed black;
 }
 .forwardBut{
     width: 5%;
     height: 80%;
-    border: 2px dashed black;
 }
 .commentArea{
     width: 70%;
@@ -187,11 +184,11 @@
     margin-right: 5%;
 	border-radius: 30px;
 	background-color: rgb(240, 240, 240);
+	border: 1px solid rgb(219, 219, 219);
 }
 .readMoreBut{
     width: 5%;
     height: 80%;
-    border: 2px dashed black;
 }
 
 .column-newBlog{
@@ -215,13 +212,11 @@
 .newBlog-img{
     width: 100%;
     height: 75%;
-    background-color: gray;
 }
 .newBlog-img:hover{
     opacity: 0;
     width: 100%;
     height: 75%;
-    background-color: gray;
 }
 .newBlog-text{
     z-index: -1;
@@ -229,7 +224,6 @@
     width: 90%;
     height: 29.5vw;
     margin-top: -6%;
-    border: 2px solid red;
 }
 .newBlog-buttons{
     display: flex;
@@ -244,12 +238,10 @@
 .newLikeBut{
     width: 4%;
     height: 90%;
-    border: 2px dashed black;
 }
 .newForwardBut{
     width: 4%;
     height: 90%;
-    border: 2px dashed black;
 }
 .newCommentArea{
     display: none;
@@ -262,6 +254,5 @@
 .newReadMoreBut{
     width: 4%;
     height: 90%;
-    border: 2px dashed black;
 }
 }
