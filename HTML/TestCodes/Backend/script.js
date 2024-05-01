@@ -44,3 +44,9 @@ fetch(URL)
             addElement()                                    //Вызов функции добавления нового элемента
         }
     })
+
+
+//Пост должен состоять из большего количества элементов, таких как <p>, <h1>, <h2>, <input>, <button> и т.п.
+//divUserId имеет в себе два элемента: <h3 class = textPost> и <p class = textuserId>
+//divTitle имеет в себе два элемента: <h3 class = textPost> и <h4 class = texttitle>
+//divCompleted имеет в себе элемент checkbox, который не имеет возможности изменяться и стилизуется в соответствии со значением (true or false) 
