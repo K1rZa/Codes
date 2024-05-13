@@ -3,6 +3,7 @@ const buttonTest = document.getElementById('buttontest')
 
 let checkedValue = null
 const inputElements = document.getElementsByClassName('answerCheck')
+const labelElements = document.getElementsByClassName('answerLab')
 
 const quest = {
 	id: 0,
@@ -91,24 +92,36 @@ let ArrayQuest = [
 let input = 0
 let completed = 0
 questDiv.innerHTML = ArrayQuest[input].title
-buttonTest.addEventListener('click', function () {
-	for (let i = 0; inputElements[i]; ++i) {
 
-        inputElements[0].value = ArrayQuest[input].ans1
-        inputElements[1].value = ArrayQuest[input].ans2
-        inputElements[2].value = ArrayQuest[input].ans3
-        inputElements[3].value = ArrayQuest[input].ans4
+labelElements[0].innerHTML = ArrayQuest[input].ans1
+labelElements[1].innerHTML = ArrayQuest[input].ans2
+labelElements[2].innerHTML = ArrayQuest[input].ans3
+labelElements[3].innerHTML = ArrayQuest[input].ans4
+
+buttonTest.addEventListener('click', function () {
+	for (let i = 0; inputElements[i]; i++) {
+		inputElements[0].value = ArrayQuest[input].ans1
+		inputElements[1].value = ArrayQuest[input].ans2
+		inputElements[2].value = ArrayQuest[input].ans3
+		inputElements[3].value = ArrayQuest[input].ans4
 
 		if (inputElements[i].checked) {
 			checkedValue = inputElements[i].value
-			console.log(checkedValue)
+			console.log('Выбран ответ: ' + checkedValue)
 		}
+
+		inputElements[i].checked = null
 	}
 	if (checkedValue === ArrayQuest[input].rightAnswer) {
 		completed++
-		console.log(completed)
+		console.log('Правильных ответов: ' + completed)
 	}
 
 	input++
 	questDiv.innerHTML = ArrayQuest[input].title
+
+	labelElements[0].innerHTML = ArrayQuest[input].ans1
+	labelElements[1].innerHTML = ArrayQuest[input].ans2
+	labelElements[2].innerHTML = ArrayQuest[input].ans3
+	labelElements[3].innerHTML = ArrayQuest[input].ans4
 })
