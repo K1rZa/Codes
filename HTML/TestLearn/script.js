@@ -88,12 +88,12 @@ buttonTest.addEventListener('click', function () {
 		console.log('Правильных ответов: ' + completed)
 	}
 
-	if (input == ArrayQuest.length - 1) {
+	if (input === ArrayQuest.length - 1) {
 		questDiv.innerHTML = 'Good Bye'
 		console.log('Всего правильных ответов: ' + completed)
 
 		buttonTest.style = 'display: none'
-		for (let i = 0; i < 4; i++) {
+		for (let i = 0; inputElements[i]; i++) {
 			inputElements[i].style = 'display: none'
 			labelElements[i].style = 'display: none'
 		}
