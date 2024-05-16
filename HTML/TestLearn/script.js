@@ -8,10 +8,7 @@ const labelElements = document.getElementsByClassName('answerLab')
 const quest = {
 	id: 0,
 	title: '',
-	ans1: '',
-	ans2: '',
-	ans3: '',
-	ans4: '',
+	ans: [],
 	rightAnswer: '',
 }
 
@@ -19,91 +16,65 @@ let ArrayQuest = [
 	{
 		id: 1,
 		title: 'title1',
-		ans1: 'text',
-		ans2: 'value1',
-		ans3: 'text',
-		ans4: 'text',
+		ans: ['text', 'value1', 'text', 'text'],
 		rightAnswer: 'value1',
 	},
 	{
 		id: 2,
 		title: 'title2',
-		ans1: 'text',
-		ans2: 'value2',
-		ans3: 'text',
-		ans4: 'text',
+		ans: ['text', 'value2', 'text', 'text'],
 		rightAnswer: 'value2',
 	},
 	{
 		id: 3,
 		title: 'title3',
-		ans1: 'text',
-		ans2: 'text',
-		ans3: 'text',
-		ans4: 'value3',
+		ans: ['text', 'value3', 'text', 'text'],
 		rightAnswer: 'value3',
 	},
 	{
 		id: 4,
 		title: 'title4',
-		ans1: 'text',
-		ans2: 'text',
-		ans3: 'value4',
-		ans4: 'text',
+		ans: ['text', 'value4', 'text', 'text'],
 		rightAnswer: 'value4',
 	},
 	{
 		id: 5,
 		title: 'title5',
-		ans1: 'value5',
-		ans2: 'text',
-		ans3: 'text',
-		ans4: 'text',
+		ans: ['text', 'value5', 'text', 'text'],
 		rightAnswer: 'value5',
 	},
 	{
 		id: 6,
 		title: 'title6',
-		ans1: 'text',
-		ans2: 'value6',
-		ans3: 'text',
-		ans4: 'text',
+		ans: ['text', 'value6', 'text', 'text'],
 		rightAnswer: 'value6',
 	},
 	{
 		id: 7,
 		title: 'title7',
-		ans1: 'text',
-		ans2: 'text',
-		ans3: 'value7',
-		ans4: 'text',
+		ans: ['text', 'value7', 'text', 'text'],
 		rightAnswer: 'value7',
 	},
 	{
 		id: 8,
 		title: 'title8',
-		ans1: 'text',
-		ans2: 'text',
-		ans3: 'text',
-		ans4: 'value8',
+		ans: ['text', 'value8', 'text', 'text'],
 		rightAnswer: 'value8',
 	},
 ]
+
 let input = 0
 let completed = 0
+
 questDiv.innerHTML = ArrayQuest[input].title
 
-labelElements[0].innerHTML = ArrayQuest[input].ans1
-labelElements[1].innerHTML = ArrayQuest[input].ans2
-labelElements[2].innerHTML = ArrayQuest[input].ans3
-labelElements[3].innerHTML = ArrayQuest[input].ans4
+for (let i = 0; labelElements[i]; i++) {
+	labelElements[i].innerHTML = ArrayQuest[input].ans[i]
+}
 
 buttonTest.addEventListener('click', function () {
 	for (let i = 0; inputElements[i]; i++) {
-		inputElements[0].value = ArrayQuest[input].ans1
-		inputElements[1].value = ArrayQuest[input].ans2
-		inputElements[2].value = ArrayQuest[input].ans3
-		inputElements[3].value = ArrayQuest[input].ans4
+		inputElements[i].value = ArrayQuest[input].ans[i]
 
 		if (inputElements[i].checked) {
 			checkedValue = inputElements[i].value
@@ -117,11 +88,22 @@ buttonTest.addEventListener('click', function () {
 		console.log('Правильных ответов: ' + completed)
 	}
 
-	input++
-	questDiv.innerHTML = ArrayQuest[input].title
+	if (input == ArrayQuest.length - 1) {
+		questDiv.innerHTML = 'Good Bye'
+		console.log('Всего правильных ответов: ' + completed)
 
-	labelElements[0].innerHTML = ArrayQuest[input].ans1
-	labelElements[1].innerHTML = ArrayQuest[input].ans2
-	labelElements[2].innerHTML = ArrayQuest[input].ans3
-	labelElements[3].innerHTML = ArrayQuest[input].ans4
+		buttonTest.style = 'display: none'
+		for (let i = 0; i < 4; i++) {
+			inputElements[i].style = 'display: none'
+			labelElements[i].style = 'display: none'
+		}
+	} else {
+		input++
+
+		questDiv.innerHTML = ArrayQuest[input].title
+
+		for (let i = 0; labelElements[i]; i++) {
+			labelElements[i].innerHTML = ArrayQuest[input].ans[i]
+		}
+	}
 })
