@@ -1,6 +1,7 @@
 const questDiv = document.getElementById('question')
-let buttonTest = document.getElementById('buttontest')
+let completedDiv = document.getElementById('completed')
 
+let buttonTest = document.getElementById('buttontest')
 let checkedValue = null
 let inputElements = document.getElementsByClassName('answerCheck')
 let labelElements = document.getElementsByClassName('answerLab')
@@ -64,23 +65,30 @@ let ArrayQuest = [
 ]
 
 let input = 0
-let completed = 0
+let correct = 0
+let correctBoolean = null
 
 function getCheckValue(i) {
 	if (inputElements[i].checked) {
 		checkedValue = inputElements[i].value
-		console.log('Выбран ответ: ' + checkedValue)
+		console.log('Выбран ответ: ' + checkedValue + correctBoolean)
 	}
 }
 
 function countRightAnswer() {
 	if (checkedValue === ArrayQuest[input].rightAnswer) {
-		completed++
-		console.log('Правильных ответов: ' + completed)
+		correctBoolean = true
+		correct++
+		console.log('Правильных ответов: ' + correct)
+	} else {
+		correctBoolean = false
 	}
+		completedDiv.innerHTML = correctBoolean
 }
 
-function inputNull() {
+function objectsNull() {
+	completedDiv.style = 'display: none'
+	completedDiv = null
 	buttonTest.style = 'display: none'
 	buttonTest = null
 	for (let i = 0; inputElements[i]; i++) {
@@ -120,7 +128,7 @@ function startTest() {
 		if (input === ArrayQuest.length - 1) {
 			finishTest()
 
-			inputNull()
+			objectsNull()
 		} else {
 			updateTestQuestion()
 		}
@@ -129,7 +137,7 @@ function startTest() {
 
 function finishTest() {
 	questDiv.innerHTML = 'Good Bye'
-	console.log('Всего правильных ответов: ' + completed)
+	console.log('Всего правильных ответов: ' + correct)
 }
 
 startTest()
