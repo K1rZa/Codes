@@ -1,8 +1,6 @@
-const questDiv = document.getElementById('question')
+let questDiv = document.getElementById('question')
 let completedDiv = document.getElementById('completed')
-
 let buttonTest = document.getElementById('buttontest')
-let checkedValue = null
 let inputElements = document.getElementsByClassName('answerCheck')
 let labelElements = document.getElementsByClassName('answerLab')
 
@@ -65,6 +63,7 @@ let ArrayQuest = [
 ]
 
 let input = 0
+let checkedValue = null
 let correct = 0
 let correctBoolean = null
 
@@ -81,7 +80,7 @@ function countRightAnswer() {
 	} else {
 		correctBoolean = false
 	}
-	console.log('Выбран ответ: ' + checkedValue + correctBoolean)
+	console.log('Выбран ответ: ', checkedValue, correctBoolean)
 	console.log('Правильных ответов: ' + correct)
 	completedDiv.innerHTML = correctBoolean
 }
