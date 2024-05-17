@@ -78,11 +78,11 @@ function countRightAnswer() {
 	if (checkedValue === ArrayQuest[input].rightAnswer) {
 		correctBoolean = true
 		correct++
-		console.log('Правильных ответов: ' + correct)
 	} else {
 		correctBoolean = false
 	}
 	console.log('Выбран ответ: ' + checkedValue + correctBoolean)
+	console.log('Правильных ответов: ' + correct)
 	completedDiv.innerHTML = correctBoolean
 }
 
