@@ -66,14 +66,6 @@ let ArrayQuest = [
 let input = 0
 let completed = 0
 
-function startTest() {
-	questDiv.innerHTML = ArrayQuest[input].title
-
-	for (let i = 0; labelElements[i]; i++) {
-		labelElements[i].innerHTML = ArrayQuest[input].ans[i]
-	}
-}
-
 function getCheckValue(i) {
 	if (inputElements[i].checked) {
 		checkedValue = inputElements[i].value
@@ -107,25 +99,33 @@ function updateTestQuestion() {
 	}
 }
 
+function startTest() {
+	questDiv.innerHTML = ArrayQuest[input].title
+
+	for (let i = 0; labelElements[i]; i++) {
+		labelElements[i].innerHTML = ArrayQuest[input].ans[i]
+	}
+
+	buttonTest.addEventListener('click', function () {
+		for (let i = 0; inputElements[i]; i++) {
+			inputElements[i].value = labelElements[i].innerHTML 
+
+			getCheckValue(i)
+
+			inputElements[i].checked = null
+		}
+
+		countRightAnswer()
+
+		if (input === ArrayQuest.length - 1) {
+			questDiv.innerHTML = 'Good Bye'
+			console.log('Всего правильных ответов: ' + completed)
+
+			inputNull()
+		} else {
+			updateTestQuestion()
+		}
+	})
+}
+
 startTest()
-
-buttonTest.addEventListener('click', function () {
-	for (let i = 0; inputElements[i]; i++) {
-		inputElements[i].value = ArrayQuest[input].ans[i]
-
-		getCheckValue(i)
-
-		inputElements[i].checked = null
-	}
-
-	countRightAnswer()
-
-	if (input === ArrayQuest.length - 1) {
-		questDiv.innerHTML = 'Good Bye'
-		console.log('Всего правильных ответов: ' + completed)
-
-		inputNull()
-	} else {
-		updateTestQuestion()
-	}
-})
