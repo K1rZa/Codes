@@ -66,47 +66,66 @@ let ArrayQuest = [
 let input = 0
 let completed = 0
 
-questDiv.innerHTML = ArrayQuest[input].title
+function startTest() {
+	questDiv.innerHTML = ArrayQuest[input].title
 
-for (let i = 0; labelElements[i]; i++) {
-	labelElements[i].innerHTML = ArrayQuest[input].ans[i]
+	for (let i = 0; labelElements[i]; i++) {
+		labelElements[i].innerHTML = ArrayQuest[input].ans[i]
+	}
 }
+
+function getCheckValue(i) {
+	if (inputElements[i].checked) {
+		checkedValue = inputElements[i].value
+		console.log('Выбран ответ: ' + checkedValue)
+	}
+}
+
+function countRightAnswer() {
+	if (checkedValue === ArrayQuest[input].rightAnswer) {
+		completed++
+		console.log('Правильных ответов: ' + completed)
+	}
+}
+
+function inputNull() {
+	buttonTest.style = 'display: none'
+	buttonTest = null
+	for (let i = 0; inputElements[i]; i++) {
+		inputElements[i] = null
+		inputElements[i].style = 'display: none'
+		labelElements[i] = null
+		labelElements[i].style = 'display: none'
+	}
+}
+
+function updateTestQuestion() {
+	input++
+	questDiv.innerHTML = ArrayQuest[input].title
+	for (let i = 0; labelElements[i]; i++) {
+		labelElements[i].innerHTML = ArrayQuest[input].ans[i]
+	}
+}
+
+startTest()
 
 buttonTest.addEventListener('click', function () {
 	for (let i = 0; inputElements[i]; i++) {
 		inputElements[i].value = ArrayQuest[input].ans[i]
 
-		if (inputElements[i].checked) {
-			checkedValue = inputElements[i].value
-			console.log('Выбран ответ: ' + checkedValue)
-		}
+		getCheckValue(i)
 
 		inputElements[i].checked = null
 	}
-	if (checkedValue === ArrayQuest[input].rightAnswer) {
-		completed++
-		console.log('Правильных ответов: ' + completed)
-	}
+
+	countRightAnswer()
 
 	if (input === ArrayQuest.length - 1) {
 		questDiv.innerHTML = 'Good Bye'
 		console.log('Всего правильных ответов: ' + completed)
 
-		buttonTest.style = 'display: none'
-		buttonTest = null
-		for (let i = 0; inputElements[i]; i++) {
-			inputElements[i].style = 'display: none'
-			labelElements[i].style = 'display: none'
-			inputElements[i] = null
-			labelElements[i] = null
-		}
+		inputNull()
 	} else {
-		input++
-
-		questDiv.innerHTML = ArrayQuest[input].title
-
-		for (let i = 0; labelElements[i]; i++) {
-			labelElements[i].innerHTML = ArrayQuest[input].ans[i]
-		}
+		updateTestQuestion()
 	}
 })
