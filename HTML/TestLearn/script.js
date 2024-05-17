@@ -108,7 +108,7 @@ function startTest() {
 
 	buttonTest.addEventListener('click', function () {
 		for (let i = 0; inputElements[i]; i++) {
-			inputElements[i].value = labelElements[i].innerHTML 
+			inputElements[i].value = labelElements[i].innerHTML
 
 			getCheckValue(i)
 
@@ -118,14 +118,18 @@ function startTest() {
 		countRightAnswer()
 
 		if (input === ArrayQuest.length - 1) {
-			questDiv.innerHTML = 'Good Bye'
-			console.log('Всего правильных ответов: ' + completed)
+			finishTest()
 
 			inputNull()
 		} else {
 			updateTestQuestion()
 		}
 	})
+}
+
+function finishTest() {
+	questDiv.innerHTML = 'Good Bye'
+	console.log('Всего правильных ответов: ' + completed)
 }
 
 startTest()
