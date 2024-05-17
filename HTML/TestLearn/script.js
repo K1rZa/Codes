@@ -1,9 +1,9 @@
 const questDiv = document.getElementById('question')
-const buttonTest = document.getElementById('buttontest')
+let buttonTest = document.getElementById('buttontest')
 
 let checkedValue = null
-const inputElements = document.getElementsByClassName('answerCheck')
-const labelElements = document.getElementsByClassName('answerLab')
+let inputElements = document.getElementsByClassName('answerCheck')
+let labelElements = document.getElementsByClassName('answerLab')
 
 const quest = {
 	id: 0,
@@ -93,9 +93,12 @@ buttonTest.addEventListener('click', function () {
 		console.log('Всего правильных ответов: ' + completed)
 
 		buttonTest.style = 'display: none'
+		buttonTest = null
 		for (let i = 0; inputElements[i]; i++) {
 			inputElements[i].style = 'display: none'
 			labelElements[i].style = 'display: none'
+			inputElements[i] = null
+			labelElements[i] = null
 		}
 	} else {
 		input++
