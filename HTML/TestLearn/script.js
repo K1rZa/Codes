@@ -71,7 +71,6 @@ let correctBoolean = null
 function getCheckValue(i) {
 	if (inputElements[i].checked) {
 		checkedValue = inputElements[i].value
-		console.log('Выбран ответ: ' + checkedValue + correctBoolean)
 	}
 }
 
@@ -83,7 +82,8 @@ function countRightAnswer() {
 	} else {
 		correctBoolean = false
 	}
-		completedDiv.innerHTML = correctBoolean
+	console.log('Выбран ответ: ' + checkedValue + correctBoolean)
+	completedDiv.innerHTML = correctBoolean
 }
 
 function objectsNull() {
