@@ -1,82 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Document</title>
+		<style>
+			#container {
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				width: 100%;
+				height: 100%;
+			}
 
-	<style>
-		#container {
-			display: flex;
-			align-items: center;
-			flex-direction: column;
-			width: 100%;
-			height: 100%;
-		}
+			#question {
+				width: 70%;
+				font-size: 24px;
+				padding: 5%;
+				border-radius: 25px;
+				border: 3px solid grey;
+				margin-bottom: 1.5%;
+			}
 
-		#question {
-			width: 70%;
-			font-size: 24px;
-			padding: 5%;
-			border-radius: 25px;
-			border: 3px solid grey;
-			margin-bottom: 1.5%;
-		}
+			#buttontest {
+				width: 25%;
+				height: 7.5vh;
+				margin-left: 5%;
+				background-color: red;
+				color: white;
+				border: none;
+				border-radius: 10px;
+				margin-top: 0.5%;
+			}
 
-		#buttontest {
-			width: 25%;
-			height: 7.5vh;
-			margin-left: 5%;
-			background-color: red;
-			color: white;
-			border: none;
-			border-radius: 10px;
-			margin-top: 0.5%;
-		}
+			#completed {
+				font-size: 20px;
+				width: 75%;
+				text-align: center;
+				margin-bottom: 2.5%;
+			}
+		</style>
+	</head>
 
-		#completed {
-			font-size: 20px;
-			width: 75%;
-			text-align: center;
-			margin-bottom: 2.5%;
-		}
-	</style>
-</head>
-
-<body>
-	<div id="container">
-		<div id="completed"></div>
-		<div id="question"></div>
-		<div style="display: flex;
-		flex-direction: column;
-		width: 70%;
-		margin-top: 0.5%;
-		gap: 1vh ;">
-			<div style="display: flex; flex-direction: row; width: 90%; gap: 1%;">
-				<input id="check1" class="answerCheck" type="radio" style="scale: 1.5;"/>
-				<label class="answerLab" for check1>Text1</label>
+	<body>
+		<div id="container">
+			<div id="completed"></div>
+			<div id="question"></div>
+			<div
+				style="
+					display: flex;
+					flex-direction: column;
+					width: 70%;
+					margin-top: 0.5%;
+					gap: 1vh;
+				"
+			>
+				<div style="display: flex; flex-direction: row; width: 90%; gap: 1%">
+					<input
+						id="check1"
+						class="answerCheck"
+						type="radio"
+						style="scale: 1.5"
+					/>
+					<label class="answerLab" for check1>Text1</label>
+				</div>
+				<div style="display: flex; flex-direction: row; width: 90%; gap: 1%">
+					<input
+						id="check2"
+						class="answerCheck"
+						type="radio"
+						style="scale: 1.5"
+					/>
+					<label class="answerLab" for check2>Text1</label>
+				</div>
+				<div style="display: flex; flex-direction: row; width: 90%; gap: 1%">
+					<input
+						id="check3"
+						class="answerCheck"
+						type="radio"
+						style="scale: 1.5"
+					/>
+					<label class="answerLab" for check3>Text1</label>
+				</div>
+				<div style="display: flex; flex-direction: row; width: 90%; gap: 1%">
+					<input
+						id="check4"
+						class="answerCheck"
+						type="radio"
+						style="scale: 1.5"
+					/>
+					<label class="answerLab" for check4>Text1</label>
+				</div>
 			</div>
-			<div style="display: flex; flex-direction: row; width: 90%; gap: 1%;">
-				<input id="check2" class="answerCheck" type="radio" style="scale: 1.5;" />
-				<label class="answerLab" for check2>Text1</label>
-			</div>
-			<div style="display: flex; flex-direction: row; width: 90%; gap: 1%;">
-				<input id="check3" class="answerCheck" type="radio" style="scale: 1.5;" />
-				<label class="answerLab" for check3>Text1</label>
-			</div>
-			<div style="display: flex; flex-direction: row; width: 90%; gap: 1%;">
-				<input id="check4" class="answerCheck" type="radio" style="scale: 1.5;" />
-				<label class="answerLab" for check4>Text1</label>
-			</div>
+
+			<button id="buttontest" type="submit">Ответить</button>
 		</div>
 
-
-		<button id="buttontest" type="submit">Ответить</button>
-	</div>
-
-
-	<script src="script.js"></script>
-</body>
-
+		<script src="script.js"></script>
+	</body>
 </html>
