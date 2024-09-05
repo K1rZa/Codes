@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+</head>
+<body>
+    <nav>
+        <a href="#" hx-get="index.html" hx-target="main">Главная</a>
+        <a href="#" hx-get="about.html" hx-target="main">О нас</a>
+        <a href="#" hx-get="contact.html" hx-select=".container" hx-target="main">Контакты</a>
+    </nav>
+    <main>
+        <h1>Добро пожаловать на наш сайт!</h1>
+        <p>Это главная страница.</p>
+    </main>
+</body>
+</html>
