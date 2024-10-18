@@ -1,0 +1,21 @@
+#view,
+.edit {
+  min-height: 150px;
+  height: auto;
+  width: 200px;
+  font-family: sans-serif;
+  font-size: 14px;
+  display: flex;
+}
+
+#view{
+    background-color: blue;
+}
+
+.edit{
+    resize: none;
+}
+
+.new_text{
+    word-break: break-all;
+}
