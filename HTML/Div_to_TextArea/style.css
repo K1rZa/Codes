@@ -9,13 +9,19 @@
 }
 
 #view{
-    background-color: blue;
+    background-color: white;
+    padding: 2px;
+    border: 1px solid black;
 }
 
 .edit{
     resize: none;
+    border: 3px solid black;
+    padding: 0px;
 }
 
 .new_text{
     word-break: break-all;
+    padding: 0;
+    margin: 0;
 }

@@ -9,11 +9,13 @@ view.addEventListener("dblclick", function () {
         edit.value = view.innerText
     
         view.after(edit)
+
+        edit.focus()
     
         edit.addEventListener("blur", function () {
             view.innerHTML = edit.value
             edit.remove()
-            view.style.display = ""
+            view.style.display = "flex"
 
             let text = document.createElement("p")
             text.className = "new_text"
