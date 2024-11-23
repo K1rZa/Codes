@@ -1,4 +1,5 @@
 const cityPointerMain = document.getElementById("city-pointer-main")
+const cityInput = document.getElementById("city_input")
 
 const flipScreenCount = 15
 
@@ -13,6 +14,16 @@ function addFlipScreen (count){
 
 addFlipScreen(flipScreenCount)
 
-// const signString = "а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я"
-// const signArr = signString.split(' ')
-// console.log(signArr)
+function getInputValue (){
+    addEventListener("keypress", function(event) {
+        var key = event.keyCode
+        if (key === 13){
+            let cityInputValue = cityInput.value
+            let signArr = cityInputValue.split('')
+            console.log(signArr)  
+        }
+    })
+}
+
+getInputValue()
+
