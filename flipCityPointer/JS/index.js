@@ -1,5 +1,5 @@
 const cityPointerMain = document.getElementById("city-pointer-main")
-const cityInput = document.getElementById("city_input")
+const cityInput = document.getElementById("city-input")
 
 const flipScreenCount = 15
 
