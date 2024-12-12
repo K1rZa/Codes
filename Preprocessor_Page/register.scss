@@ -1,66 +1,107 @@
-*{
-    padding: 0;
-    margin: 0;
+$primary-color: #ff0000;
+$secondary-color: #666;
+$background-color: #f9f9f9;
+$border-color: #ddd;
+$box-shadow-color: rgba(0, 0, 0, 0.2);
+
+
+
+@function calculate-font-size($base-size, $ratio) {
+  @return $base-size * $ratio;
+}
+@function calculate-width($base-width, $ratio) {
+  @return $base-width * $ratio;
+}
+
+
+
+@mixin button-style {
+  display: flex;
+  width: 40%;
+  height: 80%;
+  padding: 4%;
+  margin: 2%;
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+@mixin input-style {
+  height: 100%;
+  width: 80%;
+  border-radius: 10px;
+  outline: 0;
+  border: none;
+  &:hover {
+    border: 2px solid $border-color;
+  }
+  &:active {
+    border: 2px solid $border-color;
+  }
+  &:focus {
+    border: 2px solid $border-color;
+  }
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
 }
 main {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    background-image: url(./assets/IMG_20241204_015346_304.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/IMG_20241204_015346_304.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
-h1{
-    font-size: 5em;
+h1 {
+  font-size: calculate-font-size(1em, 5);
 }
-a{
-    text-decoration: none;
-    font-size: 1.1em;
-    color: black;
+a {
+  text-decoration: none;
+  font-size: calculate-font-size(1em, 1.1);
+  color: $secondary-color;
 }
-.reg-form-main{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2); 
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
+
+
+
+.reg-form-main {
+  display: flex;
+  flex-direction: column;
+  width: calculate-width(100%, 0.3);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 0 $box-shadow-color;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
 }
-.reg-form-name, .reg-form-email, .reg-form-password, .reg-form-info, .reg-form-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 5%;
-    margin-top: 1vh;
+.reg-form-name,
+.reg-form-email,
+.reg-form-password,
+.reg-form-info,
+.reg-form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 5%;
+  margin-top: 1vh;
 }
-.reg-form-input{
-    height: 100%;
-    width: 80%;
-    border-radius: 10px;
-    outline: 0;
-    border: none;
-    &:hover{
-        border: 2px solid black;
-    }
-    &:active{
-        border: 2px solid black;
-    }
-    &:focus{
-        border: 2px solid black;
-    }
+.reg-form-input {
+  @include input-style;
 }
-.reg-form-button-main{
-    display: flex;
-    width: 40%;
-    height: 80%;
-    padding: 4%;
-    margin: 2%;
+.reg-form-button-main {
+  @include button-style;
 }

@@ -22,7 +22,7 @@ h1 {
 a {
   text-decoration: none;
   font-size: 1.1em;
-  color: black;
+  color: #666;
 }
 
 .reg-form-main {
@@ -38,7 +38,11 @@ a {
           backdrop-filter: blur(10px);
 }
 
-.reg-form-name, .reg-form-email, .reg-form-password, .reg-form-info, .reg-form-button {
+.reg-form-name,
+.reg-form-email,
+.reg-form-password,
+.reg-form-info,
+.reg-form-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,13 +60,13 @@ a {
   border: none;
 }
 .reg-form-input:hover {
-  border: 2px solid black;
+  border: 2px solid #ddd;
 }
 .reg-form-input:active {
-  border: 2px solid black;
+  border: 2px solid #ddd;
 }
 .reg-form-input:focus {
-  border: 2px solid black;
+  border: 2px solid #ddd;
 }
 
 .reg-form-button-main {
@@ -71,4 +75,12 @@ a {
   height: 80%;
   padding: 4%;
   margin: 2%;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.reg-form-button-main:hover {
+  background-color: #666;
 }/*# sourceMappingURL=register.css.map */
