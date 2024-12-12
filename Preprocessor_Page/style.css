@@ -9,10 +9,13 @@ h1 {
 
 h2 {
   font-size: 2.5em;
+  border-bottom: 4px solid orange;
+  width: 100%;
 }
 
 h3 {
   font-size: 1.5em;
+  padding: 1%;
 }
 
 p {
@@ -26,6 +29,7 @@ span {
 a {
   text-decoration: none;
   font-size: 1.1em;
+  color: black;
 }
 
 ul {
@@ -48,14 +52,11 @@ header {
   overflow: hidden;
 }
 
-.header-logo-main {
-  height: 10%;
-  background-color: antiquewhite;
-}
-
-.header-img-main {
-  height: 85%;
-  background-color: grey;
+#header-img-main {
+  height: 95%;
+  background-image: url(./assets/screenshot_00050.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #header-nav {
@@ -72,9 +73,18 @@ header {
   width: 17.5%;
   justify-content: space-around;
   align-items: center;
-  background-color: aliceblue;
 }
-.header-nav-button:hover, .header-nav-button focus, .header-nav-button active {
+.header-nav-button:hover {
+  transform: scale(1.2);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  background-color: orange;
+}
+.header-nav-button:active {
+  transform: scale(1.2);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  background-color: orange;
+}
+.header-nav-button:focus {
   transform: scale(1.2);
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
   background-color: orange;
@@ -109,7 +119,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: blue;
+  overflow: hidden;
 }
 
 .home-gallery-main {
@@ -118,22 +128,30 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 0.4%;
+  transition: transform 0.5s ease-in-out;
 }
 
 .home-gallery-part {
-  width: 32%;
+  width: 33%;
+  min-width: 400px;
   aspect-ratio: 9/16;
-  background-color: grey;
   height: 100%;
   overflow: hidden;
 }
 .home-gallery-part img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
   transition: transform 0.8s ease;
 }
 .home-gallery-part img:hover {
-  transform: scale(1.2) rotate(10deg);
+  transform: scale(1.1);
+}
+.home-gallery-part img:active {
+  transform: scale(1.1);
+}
+.home-gallery-part img:focus {
+  transform: scale(1.1);
 }
 
 #home-text {
@@ -145,13 +163,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: blue;
 }
 
 .home-mods-main {
   width: 100%;
   height: 100vh;
-  background-color: aliceblue;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -159,20 +175,36 @@ main {
 
 .home-mods-part {
   width: 100%;
-  background-color: crimson;
   height: 24%;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   transform: perspective(1px) translateZ(0);
   transition-duration: 0.3s;
   transition-property: transform;
+  overflow: hidden;
 }
-.home-mods-part:hover, .home-mods-part focus, .home-mods-part active {
+.home-mods-part:hover {
   transform: scale(1.025);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.home-mods-part:active {
+  transform: scale(1.025);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.home-mods-part:active {
+  transform: scale(1.025);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .home-mods-part-text {
   width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .home-mods-part-img {

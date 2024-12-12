@@ -8,9 +8,12 @@ h1{
 }
 h2{
     font-size: 2.5em;
+    border-bottom: 4px solid orange;
+    width: 100%;
 }
 h3{
     font-size: 1.5em;
+    padding: 1%;
 }
 p{
     font-size: 1em;
@@ -21,6 +24,7 @@ span{
 a{
     text-decoration: none;
     font-size: 1.1em;
+    color: black;
 }
 ul{
     list-style-type: none;
@@ -41,13 +45,11 @@ header{
     height: 70vh;
     overflow: hidden;
 }
-.header-logo-main{
-    height: 10%;
-    background-color: antiquewhite;
-}
-.header-img-main{
-    height: 85%;
-    background-color: grey;
+#header-img-main{
+    height: 95%;
+    background-image: url(./assets/screenshot_00050.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 #header-nav{
     display: flex;
@@ -62,8 +64,17 @@ header{
     width: 17.5%;
     justify-content: space-around;
     align-items: center;
-    background-color: aliceblue;
-    &:hover, focus, active{
+    &:hover{
+        transform: scale(1.2);
+        transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+        background-color: orange;
+    }
+    &:active{
+        transform: scale(1.2);
+        transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+        background-color: orange;
+    }
+    &:focus{
         transform: scale(1.2);
         transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
         background-color: orange;
@@ -96,7 +107,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: blue;
+    overflow: hidden;
 }
 .home-gallery-main{
     width: 100%;
@@ -104,21 +115,29 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 0.4%;
+    transition: transform 0.5s ease-in-out;
 
 }
 .home-gallery-part{
-    width: 32%;
+    width: 33%;
+    min-width: 400px;
     aspect-ratio: 9 / 16;
-    background-color: grey;
     height: 100%;
     overflow: hidden;
 
     img{
-        object-fit: cover;
+        object-fit: fill;
         transition: transform 0.8s ease;
     
         &:hover{
-            transform: scale(1.2) rotate(10deg);
+            transform: scale(1.1);
+        }
+        &:active{
+            transform: scale(1.1);
+        }
+        &:focus{
+            transform: scale(1.1);
         }
     }
 }
@@ -131,12 +150,10 @@ main{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: blue;
 }
 .home-mods-main{
     width: 100%;
     height: 100vh;
-    background-color: aliceblue;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -144,19 +161,35 @@ main{
 }
 .home-mods-part{
     width: 100%;
-    background-color: crimson;
     height: 24%;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     transform: perspective(1px) translateZ(0);
     transition-duration: 0.3s;
     transition-property: transform;
-    &:hover, focus, active{
+    overflow: hidden;
+    &:hover{
         transform: scale(1.025);
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    &:active{
+        transform: scale(1.025);
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    &:active{
+        transform: scale(1.025);
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
     }
 }
 .home-mods-part-text{
     width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 .home-mods-part-img{
     height: 100%;
@@ -212,3 +245,4 @@ footer{
 .footer-nav-socialMedia-main{
     margin-top: 20%;
 }
+
