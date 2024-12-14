@@ -125,32 +125,35 @@ main {
 .home-gallery-main {
   width: 100%;
   background-color: aliceblue;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   margin-top: 0.4%;
   transition: transform 0.5s ease-in-out;
 }
 
-.home-gallery-part {
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.swiper-slide {
   width: 33%;
   min-width: 400px;
   aspect-ratio: 9/16;
   height: 100%;
   overflow: hidden;
 }
-.home-gallery-part img {
+.swiper-slide img {
   -o-object-fit: fill;
      object-fit: fill;
   transition: transform 0.8s ease;
 }
-.home-gallery-part img:hover {
+.swiper-slide img:hover {
   transform: scale(1.1);
 }
-.home-gallery-part img:active {
+.swiper-slide img:active {
   transform: scale(1.1);
 }
-.home-gallery-part img:focus {
+.swiper-slide img:focus {
   transform: scale(1.1);
 }
 
@@ -184,17 +187,17 @@ main {
   overflow: hidden;
 }
 .home-mods-part:hover {
-  transform: scale(1.025);
+  transform: scale(1.01);
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
 .home-mods-part:active {
-  transform: scale(1.025);
+  transform: scale(1.01);
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
 .home-mods-part:active {
-  transform: scale(1.025);
+  transform: scale(1.01);
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
