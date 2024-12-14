@@ -6,6 +6,7 @@
     <title>Preprocessor Page</title>
     <script src="https://unpkg.com/htmx.org@1.9.2"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -13,19 +14,154 @@
             <div id="header-img-main"></div>
             <nav id="header-nav">
                 <a class="header-nav-button" id="header-nav-home" href="index.html">
-                    Home
+                    <span>Home</span>
+                    <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0%" y="-44" width="4.5%" height="44" />
+                        <rect x="4%" y="-44" width="4.5%" height="44" />
+                        <rect x="8%" y="-44" width="4.5%" height="44" />
+                        <rect x="12%" y="-44" width="4.5%" height="44" />
+                        <rect x="16%" y="-44" width="4.5%" height="44" />
+                        <rect x="20%" y="-44" width="4.5%" height="44" />
+                        <rect x="24%" y="-44" width="4.5%" height="44" />
+                        <rect x="28%" y="-44" width="4.5%" height="44" />
+                        <rect x="32%" y="-44" width="4.5%" height="44" />
+                        <rect x="36%" y="-44" width="4.5%" height="44" />
+                        <rect x="40%" y="-44" width="4.5%" height="44" />
+                        <rect x="44%" y="-44" width="4.5%" height="44" />
+                        <rect x="48%" y="-44" width="4.5%" height="44" />
+                        <rect x="52%" y="-44" width="4.5%" height="44" />
+                        <rect x="56%" y="-44" width="4.5%" height="44" />
+                        <rect x="60%" y="-44" width="4.5%" height="44" />
+                        <rect x="64%" y="-44" width="4.5%" height="44" />
+                        <rect x="68%" y="-44" width="4.5%" height="44" />
+                        <rect x="72%" y="-44" width="4.5%" height="44" />
+                        <rect x="76%" y="-44" width="4.5%" height="44" />
+                        <rect x="80%" y="-44" width="4.5%" height="44" />
+                        <rect x="84%" y="-44" width="4.5%" height="44" />
+                        <rect x="88%" y="-44" width="4.5%" height="44" />
+                        <rect x="92%" y="-44" width="4.5%" height="44" />
+                        <rect x="96%" y="-44" width="4.5%" height="44" />
+                    </svg>
                 </a>
                 <a class="header-nav-button" id="header-nav-tournament-before" href="#" hx-get="tournament-before.html" hx-select="main" hx-target="main">
-                    Tournament Before
+                    <span>Tournament Before</span>
+                    <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0%" y="-44" width="4.5%" height="44" />
+                        <rect x="4%" y="-44" width="4.5%" height="44" />
+                        <rect x="8%" y="-44" width="4.5%" height="44" />
+                        <rect x="12%" y="-44" width="4.5%" height="44" />
+                        <rect x="16%" y="-44" width="4.5%" height="44" />
+                        <rect x="20%" y="-44" width="4.5%" height="44" />
+                        <rect x="24%" y="-44" width="4.5%" height="44" />
+                        <rect x="28%" y="-44" width="4.5%" height="44" />
+                        <rect x="32%" y="-44" width="4.5%" height="44" />
+                        <rect x="36%" y="-44" width="4.5%" height="44" />
+                        <rect x="40%" y="-44" width="4.5%" height="44" />
+                        <rect x="44%" y="-44" width="4.5%" height="44" />
+                        <rect x="48%" y="-44" width="4.5%" height="44" />
+                        <rect x="52%" y="-44" width="4.5%" height="44" />
+                        <rect x="56%" y="-44" width="4.5%" height="44" />
+                        <rect x="60%" y="-44" width="4.5%" height="44" />
+                        <rect x="64%" y="-44" width="4.5%" height="44" />
+                        <rect x="68%" y="-44" width="4.5%" height="44" />
+                        <rect x="72%" y="-44" width="4.5%" height="44" />
+                        <rect x="76%" y="-44" width="4.5%" height="44" />
+                        <rect x="80%" y="-44" width="4.5%" height="44" />
+                        <rect x="84%" y="-44" width="4.5%" height="44" />
+                        <rect x="88%" y="-44" width="4.5%" height="44" />
+                        <rect x="92%" y="-44" width="4.5%" height="44" />
+                        <rect x="96%" y="-44" width="4.5%" height="44" />
+                    </svg>
                 </a>
                 <a class="header-nav-button" id="header-nav-tournament-after" href="#" hx-get="tournament-after.html" hx-select="main" hx-target="main">
-                    Tournament After
+                    <span>Tournament After</span>
+                    <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0%" y="-44" width="4.5%" height="44" />
+                        <rect x="4%" y="-44" width="4.5%" height="44" />
+                        <rect x="8%" y="-44" width="4.5%" height="44" />
+                        <rect x="12%" y="-44" width="4.5%" height="44" />
+                        <rect x="16%" y="-44" width="4.5%" height="44" />
+                        <rect x="20%" y="-44" width="4.5%" height="44" />
+                        <rect x="24%" y="-44" width="4.5%" height="44" />
+                        <rect x="28%" y="-44" width="4.5%" height="44" />
+                        <rect x="32%" y="-44" width="4.5%" height="44" />
+                        <rect x="36%" y="-44" width="4.5%" height="44" />
+                        <rect x="40%" y="-44" width="4.5%" height="44" />
+                        <rect x="44%" y="-44" width="4.5%" height="44" />
+                        <rect x="48%" y="-44" width="4.5%" height="44" />
+                        <rect x="52%" y="-44" width="4.5%" height="44" />
+                        <rect x="56%" y="-44" width="4.5%" height="44" />
+                        <rect x="60%" y="-44" width="4.5%" height="44" />
+                        <rect x="64%" y="-44" width="4.5%" height="44" />
+                        <rect x="68%" y="-44" width="4.5%" height="44" />
+                        <rect x="72%" y="-44" width="4.5%" height="44" />
+                        <rect x="76%" y="-44" width="4.5%" height="44" />
+                        <rect x="80%" y="-44" width="4.5%" height="44" />
+                        <rect x="84%" y="-44" width="4.5%" height="44" />
+                        <rect x="88%" y="-44" width="4.5%" height="44" />
+                        <rect x="92%" y="-44" width="4.5%" height="44" />
+                        <rect x="96%" y="-44" width="4.5%" height="44" />
+                    </svg>
                 </a>
                 <a class="header-nav-button" id="header-nav-info" href="#" hx-get="info.html" hx-select=".main" hx-target="main">
-                    Info
+                    <span>Info</span>
+                    <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0%" y="-44" width="4.5%" height="44" />
+                        <rect x="4%" y="-44" width="4.5%" height="44" />
+                        <rect x="8%" y="-44" width="4.5%" height="44" />
+                        <rect x="12%" y="-44" width="4.5%" height="44" />
+                        <rect x="16%" y="-44" width="4.5%" height="44" />
+                        <rect x="20%" y="-44" width="4.5%" height="44" />
+                        <rect x="24%" y="-44" width="4.5%" height="44" />
+                        <rect x="28%" y="-44" width="4.5%" height="44" />
+                        <rect x="32%" y="-44" width="4.5%" height="44" />
+                        <rect x="36%" y="-44" width="4.5%" height="44" />
+                        <rect x="40%" y="-44" width="4.5%" height="44" />
+                        <rect x="44%" y="-44" width="4.5%" height="44" />
+                        <rect x="48%" y="-44" width="4.5%" height="44" />
+                        <rect x="52%" y="-44" width="4.5%" height="44" />
+                        <rect x="56%" y="-44" width="4.5%" height="44" />
+                        <rect x="60%" y="-44" width="4.5%" height="44" />
+                        <rect x="64%" y="-44" width="4.5%" height="44" />
+                        <rect x="68%" y="-44" width="4.5%" height="44" />
+                        <rect x="72%" y="-44" width="4.5%" height="44" />
+                        <rect x="76%" y="-44" width="4.5%" height="44" />
+                        <rect x="80%" y="-44" width="4.5%" height="44" />
+                        <rect x="84%" y="-44" width="4.5%" height="44" />
+                        <rect x="88%" y="-44" width="4.5%" height="44" />
+                        <rect x="92%" y="-44" width="4.5%" height="44" />
+                        <rect x="96%" y="-44" width="4.5%" height="44" />
+                    </svg>
                 </a>
                 <a class="header-nav-button" id="header-nav-register" href="register.html">
-                    Register
+                    <span>Register</span>
+                    <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0%" y="-44" width="4.5%" height="44" />
+                        <rect x="4%" y="-44" width="4.5%" height="44" />
+                        <rect x="8%" y="-44" width="4.5%" height="44" />
+                        <rect x="12%" y="-44" width="4.5%" height="44" />
+                        <rect x="16%" y="-44" width="4.5%" height="44" />
+                        <rect x="20%" y="-44" width="4.5%" height="44" />
+                        <rect x="24%" y="-44" width="4.5%" height="44" />
+                        <rect x="28%" y="-44" width="4.5%" height="44" />
+                        <rect x="32%" y="-44" width="4.5%" height="44" />
+                        <rect x="36%" y="-44" width="4.5%" height="44" />
+                        <rect x="40%" y="-44" width="4.5%" height="44" />
+                        <rect x="44%" y="-44" width="4.5%" height="44" />
+                        <rect x="48%" y="-44" width="4.5%" height="44" />
+                        <rect x="52%" y="-44" width="4.5%" height="44" />
+                        <rect x="56%" y="-44" width="4.5%" height="44" />
+                        <rect x="60%" y="-44" width="4.5%" height="44" />
+                        <rect x="64%" y="-44" width="4.5%" height="44" />
+                        <rect x="68%" y="-44" width="4.5%" height="44" />
+                        <rect x="72%" y="-44" width="4.5%" height="44" />
+                        <rect x="76%" y="-44" width="4.5%" height="44" />
+                        <rect x="80%" y="-44" width="4.5%" height="44" />
+                        <rect x="84%" y="-44" width="4.5%" height="44" />
+                        <rect x="88%" y="-44" width="4.5%" height="44" />
+                        <rect x="92%" y="-44" width="4.5%" height="44" />
+                        <rect x="96%" y="-44" width="4.5%" height="44" />
+                    </svg>
                 </a>
             </nav>
         </header>

@@ -59,25 +59,25 @@ header{
 }
 .header-nav-button{
   display: flex;
-  transform: perspective(1px) translateZ(1);
-  transition-duration: 0.5s;
-  width: 17.5%;
-  justify-content: space-around;
+  width: 25%;
+  justify-content: center;
   align-items: center;
-  &:hover{
-      transform: scale(1.2);
-      transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-      background-color: orange;
+  overflow: hidden;
+  position: relative;
+  svg{
+    rect {
+      fill: orange;
+      transition: fill 300ms ease-in-out;
+    }
   }
-  &:active{
-      transform: scale(1.2);
-      transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-      background-color: orange;
-  }
-  &:focus{
-      transform: scale(1.2);
-      transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-      background-color: orange;
+  span{
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 2px;
+    position: absolute;
+    white-space: nowrap;
   }
 }
 
@@ -114,16 +114,14 @@ main{
   background-color: aliceblue;
   margin-top: 0.4%;
   transition: transform 0.5s ease-in-out;
-
 }
 .swiper-wrapper{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .swiper-slide{
-  width: 33%;
-  min-width: 400px;
+  min-width: 33.33%;
   aspect-ratio: 9 / 16;
   height: 100%;
   overflow: hidden;
