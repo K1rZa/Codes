@@ -1,7 +1,8 @@
 $text-color-1:white;
-$text-color-2:rgb(237, 237, 237);
+$text-color-2:rgb(180, 180, 180);
 $background-color-1:rgb(23, 23, 23);
 $background-color-2:rgb(68, 68, 68);
+$background-color-3:rgb(30, 30, 30);
 $accent-color:rgb(220, 0, 0);
 
 *{
@@ -60,7 +61,7 @@ header{
 }
 #header-img-main{
   height: 95%;
-  background-image: url(./assets/screenshot_00050.png);
+  background-image: linear-gradient(to top, $background-color-2 0.25%, rgba(255, 255, 255, 0)), url(./assets/screenshot_00050.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -170,6 +171,7 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-top: 2.5%;
 
 }
 .home-mods-part{
@@ -181,28 +183,53 @@ main{
   transition-duration: 0.3s;
   transition-property: transform;
   overflow: hidden;
+  // color: $text-color-2;
   &:hover{
       transform: scale(1.01);
       border-top: 1px solid $accent-color;
       border-bottom: 1px solid $accent-color;
+      // color: $text-color-1;
   }
   &:active{
       transform: scale(1.01);
       border-top: 1px solid $accent-color;
       border-bottom: 1px solid $accent-color;
+      // color: $text-color-1;
   }
   &:active{
       transform: scale(1.01);
       border-top: 1px solid $accent-color;
       border-bottom: 1px solid $accent-color;
+      // color: $text-color-1;
   }
 }
 .home-mods-part-text{
   width: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-color: $background-color-3;
+  &:hover, &:active, &:focus{
+    background-color: $background-color-2;
+    p{
+      color: $text-color-1;
+    }
+  }
+  input{
+    background-color: $accent-color;
+    width: 30%;
+    height: 15%;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.9em;
+    &:hover, &:active, &:focus{
+      border: 2px solid $accent-color;
+      background-color: $background-color-2;
+      color: $text-color-1;
+    } 
+  }
 }
 .home-mods-part-img{
   height: 100%;

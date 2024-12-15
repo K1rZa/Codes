@@ -23,7 +23,7 @@ h3 {
 
 p {
   font-size: 1em;
-  color: rgb(237, 237, 237);
+  color: rgb(180, 180, 180);
 }
 
 span {
@@ -39,7 +39,7 @@ a {
 
 ul {
   list-style-type: none;
-  color: rgb(237, 237, 237);
+  color: rgb(180, 180, 180);
 }
 
 body {
@@ -61,7 +61,7 @@ header {
 
 #header-img-main {
   height: 95%;
-  background-image: url(./assets/screenshot_00050.png);
+  background-image: linear-gradient(to top, rgb(68, 68, 68) 0.25%, rgba(255, 255, 255, 0)), url(./assets/screenshot_00050.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -178,6 +178,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-top: 2.5%;
 }
 
 .home-mods-part {
@@ -209,9 +210,30 @@ main {
 .home-mods-part-text {
   width: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-color: rgb(30, 30, 30);
+}
+.home-mods-part-text:hover, .home-mods-part-text:active, .home-mods-part-text:focus {
+  background-color: rgb(68, 68, 68);
+}
+.home-mods-part-text:hover p, .home-mods-part-text:active p, .home-mods-part-text:focus p {
+  color: white;
+}
+.home-mods-part-text input {
+  background-color: rgb(220, 0, 0);
+  width: 30%;
+  height: 15%;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.9em;
+}
+.home-mods-part-text input:hover, .home-mods-part-text input:active, .home-mods-part-text input:focus {
+  border: 2px solid rgb(220, 0, 0);
+  background-color: rgb(68, 68, 68);
+  color: white;
 }
 
 .home-mods-part-img {

@@ -13,13 +13,17 @@ let swiper = new Swiper(".home-gallery-main", {
       }
   
       effect.element.addEventListener("mouseenter", () => {
-        let reverse = effect.element.classList.contains("active") ? true : false;
-        effect.element.classList.toggle("active");
-        effect.handler(effect.nodes, effect.config, reverse);
+        if (!effect.element.classList.contains("active")) {
+          effect.element.classList.add("active");
+          effect.handler(effect.nodes, effect.config, false); 
+        }
       });
   
       effect.element.addEventListener("mouseleave", () => {
-        effect.handler(effect.nodes, effect.config, true);
+        if (effect.element.classList.contains("active")) {
+          effect.element.classList.remove("active");
+          effect.handler(effect.nodes, effect.config, true); 
+        }
       });
     }
   
@@ -39,13 +43,13 @@ let swiper = new Swiper(".home-gallery-main", {
           gsap.to(node, {
             duration: duration,
             ease: ease,
-            y: y1
+            y: y1 
           });
         } else {
           gsap.to(node, {
             duration: duration,
             ease: ease,
-            y: y2
+            y: y2 
           });
         }
       }, index * offset);
@@ -60,13 +64,14 @@ let swiper = new Swiper(".home-gallery-main", {
       nodes: [...randomStepLinkHome.querySelectorAll("rect")],
       config: {
         offset: 10,
-        duration: 0.8,
+        duration: 0.2,
         random: true,
-        ease: "steps(5)",
+        ease: "steps(10)",
         y1: -20,
         y2: 44
       }
     };
+  
     const randomStepLinkInfo = document.getElementById("header-nav-info");
     const randomStepLinkEffectInfo = {
       element: randomStepLinkInfo,
@@ -74,9 +79,9 @@ let swiper = new Swiper(".home-gallery-main", {
       nodes: [...randomStepLinkInfo.querySelectorAll("rect")],
       config: {
         offset: 10,
-        duration: 0.8,
+        duration: 0.2,
         random: true,
-        ease: "steps(5)",
+        ease: "steps(10)",
         y1: -20,
         y2: 44
       }
@@ -89,9 +94,9 @@ let swiper = new Swiper(".home-gallery-main", {
       nodes: [...randomStepLinkTournament1.querySelectorAll("rect")],
       config: {
         offset: 10,
-        duration: 0.8,
+        duration: 0.2,
         random: true,
-        ease: "steps(5)",
+        ease: "steps(10)",
         y1: -20,
         y2: 44
       }
@@ -104,9 +109,9 @@ let swiper = new Swiper(".home-gallery-main", {
       nodes: [...randomStepLinkTournament2.querySelectorAll("rect")],
       config: {
         offset: 10,
-        duration: 0.8,
+        duration: 0.2,
         random: true,
-        ease: "steps(5)",
+        ease: "steps(10)",
         y1: -20,
         y2: 44
       }
@@ -119,9 +124,9 @@ let swiper = new Swiper(".home-gallery-main", {
       nodes: [...randomStepLinkRegister.querySelectorAll("rect")],
       config: {
         offset: 10,
-        duration: 0.8,
+        duration: 0.2,
         random: true,
-        ease: "steps(5)",
+        ease: "steps(10)",
         y1: -20,
         y2: 44
       }
