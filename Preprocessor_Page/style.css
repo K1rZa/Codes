@@ -5,35 +5,41 @@
 
 h1 {
   font-size: 5em;
+  color: white;
 }
 
 h2 {
   font-size: 2.5em;
-  border-bottom: 4px solid orange;
+  border-bottom: 4px solid rgb(220, 0, 0);
   width: 100%;
+  color: white;
 }
 
 h3 {
   font-size: 1.5em;
   padding: 1%;
+  color: white;
 }
 
 p {
   font-size: 1em;
+  color: rgb(237, 237, 237);
 }
 
 span {
   font-size: 1.1em;
+  color: white;
 }
 
 a {
   text-decoration: none;
   font-size: 1.1em;
-  color: black;
+  color: white;
 }
 
 ul {
   list-style-type: none;
+  color: rgb(237, 237, 237);
 }
 
 body {
@@ -42,6 +48,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rgb(23, 23, 23);
 }
 
 header {
@@ -63,7 +70,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 5%;
+  height: 6%;
+  background-color: rgb(68, 68, 68);
 }
 
 .header-nav-button {
@@ -75,7 +83,7 @@ header {
   position: relative;
 }
 .header-nav-button svg rect {
-  fill: orange;
+  fill: rgb(220, 0, 0);
   transition: fill 300ms ease-in-out;
 }
 .header-nav-button span {
@@ -83,7 +91,6 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 2px;
   position: absolute;
   white-space: nowrap;
 }
@@ -185,18 +192,18 @@ main {
 }
 .home-mods-part:hover {
   transform: scale(1.01);
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid rgb(220, 0, 0);
+  border-bottom: 1px solid rgb(220, 0, 0);
 }
 .home-mods-part:active {
   transform: scale(1.01);
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid rgb(220, 0, 0);
+  border-bottom: 1px solid rgb(220, 0, 0);
 }
 .home-mods-part:active {
   transform: scale(1.01);
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid rgb(220, 0, 0);
+  border-bottom: 1px solid rgb(220, 0, 0);
 }
 
 .home-mods-part-text {
@@ -210,7 +217,6 @@ main {
 .home-mods-part-img {
   height: 100%;
   aspect-ratio: 16/9;
-  background-color: grey;
 }
 .home-mods-part-img img {
   -o-object-fit: cover;
@@ -252,16 +258,17 @@ main {
   width: 60%;
   height: 100%;
   overflow: hidden;
-  background-color: grey;
 }
 
 footer {
+  margin-top: 10%;
   width: 100%;
   height: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(68, 68, 68);
 }
 
 .footer-nav-socialMedia-main {

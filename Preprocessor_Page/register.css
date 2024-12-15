@@ -17,12 +17,16 @@ main {
 
 h1 {
   font-size: 5em;
+  color: black;
 }
 
 a {
   text-decoration: none;
   font-size: 1.1em;
-  color: #666;
+  color: rgb(150, 150, 150);
+}
+a:hover, a:active, a:focus {
+  color: white;
 }
 
 .reg-form-main {
@@ -38,17 +42,23 @@ a {
           backdrop-filter: blur(10px);
 }
 
-.reg-form-name,
-.reg-form-email,
-.reg-form-password,
-.reg-form-info,
-.reg-form-button {
+.reg-form-name, .reg-form-email, .reg-form-password, .reg-form-info {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 100%;
   height: 5%;
+  margin-top: 1vh;
+}
+
+.reg-form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 8.5%;
   margin-top: 1vh;
 }
 
@@ -60,27 +70,28 @@ a {
   border: none;
 }
 .reg-form-input:hover {
-  border: 2px solid #ddd;
+  border: 2px solid rgb(220, 0, 0);
 }
 .reg-form-input:active {
-  border: 2px solid #ddd;
+  border: 2px solid rgb(220, 0, 0);
 }
 .reg-form-input:focus {
-  border: 2px solid #ddd;
+  border: 2px solid rgb(220, 0, 0);
 }
 
 .reg-form-button-main {
   display: flex;
-  width: 40%;
-  height: 80%;
-  padding: 4%;
+  width: 50%;
+  height: 100%;
   margin: 2%;
-  background-color: #ff0000;
-  color: #fff;
-  border: none;
   border-radius: 10px;
-  cursor: pointer;
+  border: none;
+  background-color: rgb(220, 0, 0);
+  color: black;
+  font-size: 1.1em;
 }
-.reg-form-button-main:hover {
-  background-color: #666;
+.reg-form-button-main:hover, .reg-form-button-main:active, .reg-form-button-main:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 2px solid rgb(220, 0, 0);
 }/*# sourceMappingURL=register.css.map */

@@ -17,6 +17,10 @@ let swiper = new Swiper(".home-gallery-main", {
         effect.element.classList.toggle("active");
         effect.handler(effect.nodes, effect.config, reverse);
       });
+  
+      effect.element.addEventListener("mouseleave", () => {
+        effect.handler(effect.nodes, effect.config, true);
+      });
     }
   
     randomizeArray(array) {
@@ -48,29 +52,7 @@ let swiper = new Swiper(".home-gallery-main", {
     });
   };
   
-  const svgAlertnatingEffect = (nodes, config, reverse) => {
-    nodes.forEach((node, index) => {
-      const { duration, ease, offset } = config;
-      setTimeout(() => {
-        if (reverse) {
-          gsap.to(node, {
-            duration: duration,
-            ease: ease,
-            y: index % 2 === 0 ? -44 : 44
-          });
-        } else {
-          gsap.to(node, {
-            duration: duration,
-            ease: ease,
-            y: index % 2 === 0 ? 44 : -44
-          });
-        }
-      }, index * offset);
-    });
-  };
-  
   document.addEventListener("DOMContentLoaded", (event) => {
-  
     const randomStepLinkHome = document.getElementById("header-nav-home");
     const randomStepLinkEffectHome = {
       element: randomStepLinkHome,
@@ -99,6 +81,7 @@ let swiper = new Swiper(".home-gallery-main", {
         y2: 44
       }
     };
+  
     const randomStepLinkTournament1 = document.getElementById("header-nav-tournament-before");
     const randomStepLinkEffectTournament1 = {
       element: randomStepLinkTournament1,
@@ -113,6 +96,7 @@ let swiper = new Swiper(".home-gallery-main", {
         y2: 44
       }
     };
+  
     const randomStepLinkTournament2 = document.getElementById("header-nav-tournament-after");
     const randomStepLinkEffectTournament2 = {
       element: randomStepLinkTournament2,
@@ -127,6 +111,7 @@ let swiper = new Swiper(".home-gallery-main", {
         y2: 44
       }
     };
+  
     const randomStepLinkRegister = document.getElementById("header-nav-register");
     const randomStepLinkEffectRegister = {
       element: randomStepLinkRegister,
@@ -141,11 +126,11 @@ let swiper = new Swiper(".home-gallery-main", {
         y2: 44
       }
     };
-
+  
     new SvgLinkEffect(randomStepLinkEffectHome);
     new SvgLinkEffect(randomStepLinkEffectInfo);
     new SvgLinkEffect(randomStepLinkEffectTournament1);
     new SvgLinkEffect(randomStepLinkEffectTournament2);
     new SvgLinkEffect(randomStepLinkEffectRegister);
   });
-  
+   

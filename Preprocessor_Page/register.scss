@@ -1,55 +1,10 @@
-$primary-color: #ff0000;
-$secondary-color: #666;
-$background-color: #f9f9f9;
-$border-color: #ddd;
-$box-shadow-color: rgba(0, 0, 0, 0.2);
+$text-color-1:black;
+$text-color-2:rgb(150, 150, 150);
+$text-color-3:white;
+$background-color-1:rgba(255, 255, 255, 0.15);
+$accent-color:rgb(220, 0, 0);
 
-
-
-@function calculate-font-size($base-size, $ratio) {
-  @return $base-size * $ratio;
-}
-@function calculate-width($base-width, $ratio) {
-  @return $base-width * $ratio;
-}
-
-
-
-@mixin button-style {
-  display: flex;
-  width: 40%;
-  height: 80%;
-  padding: 4%;
-  margin: 2%;
-  background-color: $primary-color;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  &:hover {
-    background-color: $secondary-color;
-  }
-}
-@mixin input-style {
-  height: 100%;
-  width: 80%;
-  border-radius: 10px;
-  outline: 0;
-  border: none;
-  &:hover {
-    border: 2px solid $border-color;
-  }
-  &:active {
-    border: 2px solid $border-color;
-  }
-  &:focus {
-    border: 2px solid $border-color;
-  }
-}
-
-
-
-* {
+*{
   padding: 0;
   margin: 0;
 }
@@ -64,33 +19,30 @@ main {
   background-size: cover;
   background-position: 50% 50%;
 }
-h1 {
-  font-size: calculate-font-size(1em, 5);
+h1{
+  font-size: 5em;
+  color: $text-color-1;
 }
-a {
+a{
   text-decoration: none;
-  font-size: calculate-font-size(1em, 1.1);
-  color: $secondary-color;
+  font-size: 1.1em;
+  color: $text-color-2;
+  &:hover, &:active, &:focus{
+    color: $text-color-3;
+  }
 }
-
-
-
-.reg-form-main {
+.reg-form-main{
   display: flex;
   flex-direction: column;
-  width: calculate-width(100%, 0.3);
+  width: 30%;
   height: 100vh;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 0 0 $box-shadow-color;
-  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2); 
+  background-color: $background-color-1;
   backdrop-filter: blur(10px);
 }
-.reg-form-name,
-.reg-form-email,
-.reg-form-password,
-.reg-form-info,
-.reg-form-button {
+.reg-form-name, .reg-form-email, .reg-form-password, .reg-form-info{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,9 +51,44 @@ a {
   height: 5%;
   margin-top: 1vh;
 }
-.reg-form-input {
-  @include input-style;
+.reg-form-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 8.5%;
+  margin-top: 1vh;
 }
-.reg-form-button-main {
-  @include button-style;
+.reg-form-input{
+  height: 100%;
+  width: 80%;
+  border-radius: 10px;
+  outline: 0;
+  border: none;
+  &:hover{
+      border: 2px solid $accent-color;
+  }
+  &:active{
+      border: 2px solid $accent-color
+  }
+  &:focus{
+      border: 2px solid $accent-color;
+  }
+}
+.reg-form-button-main{
+  display: flex;
+  width: 50%;
+  height: 100%;
+  margin: 2%;
+  border-radius: 10px;
+  border: none;
+  background-color: $accent-color;
+  color: $text-color-1;
+  font-size: 1.1em;
+  &:hover, &:active, &:focus{
+    background-color: $background-color-1;
+    color: $text-color-3;
+    border: 2px solid $accent-color;
+  }
 }
