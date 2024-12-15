@@ -101,7 +101,36 @@ main{
   width: 80%;
   align-items: center;
   gap: 5vh;
+  position: relative;
 }
+
+.img-decoration-top-left{
+  position: absolute;
+  top: 0;
+  left: -15%;
+  width: 30%;
+  aspect-ratio: 1 / 1;
+  background-image: linear-gradient(-35deg, $background-color-1 30%, rgba(255, 255, 255, 0)), url(./assets/image.png);
+  z-index: -1;
+  overflow: hidden;
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.img-decoration-bottom-right{
+  position: absolute;
+  right: -12.5%;
+  bottom: -7.5%;
+  aspect-ratio: 1 / 1;
+  background-image: linear-gradient(135deg, $background-color-1 30%, rgba(255, 255, 255, 0)), url(./assets/image.png);
+  z-index: -1;
+  width: 30%;
+  overflow: hidden;
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 .main{
   width: 100%;
   height: 100%;
