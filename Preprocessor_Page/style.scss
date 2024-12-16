@@ -5,38 +5,55 @@ $background-color-2:rgb(68, 68, 68);
 $background-color-3:rgb(30, 30, 30);
 $accent-color:rgb(220, 0, 0);
 
+@function font_size_settings($min_font, $coef){
+  @return calc($min_font + $coef);
+}
+
+@mixin text_adjustable($min_font, $coef, $text_color){
+  font-size: font_size_settings($min_font, $coef);
+  color: $text_color;
+}
+
+@mixin input_button_adjustable($el_width, $el_height, $el_color, $bg_el_color, $el_font_size){
+    background-color: $el_color;
+    width: $el_width;
+    height: $el_height;
+    border-radius: 10px;
+    border: none;
+    font-size: $el_font_size;
+    &:hover, &:active, &:focus{
+      border: 2px solid $el_color;
+      background-color: $bg_el_color;
+      color: $text-color-1;
+    } 
+}
+
 *{
   margin: 0;
   padding: 0;
 }
 
 h1{
-  font-size: 5em;
-  color: $text-color-1;
+  @include text_adjustable(2em, 3.5vw, $text-color-1)
 }
 h2{
-  font-size: 2.5em;
   border-bottom: 4px solid $accent-color;
   width: 100%;
-  color: $text-color-1;
+  @include text_adjustable(1.25em, 1.5vw, $text-color-1)
 }
 h3{
-  font-size: 1.5em;
   padding: 1%;
-  color: $text-color-1;
+  @include text_adjustable(0.9em, 1.05vw, $text-color-1)
 }
 p{
-  font-size: 1em;
-  color: $text-color-2;
+  @include text_adjustable(0.7em, 0.3vw, $text-color-2)
 }
 span{
-  font-size: 1.1em;
-  color: $text-color-1;
+  @include text_adjustable(0.8em, 0.3vw, $text-color-1)
 }
 a{
   text-decoration: none;
-  font-size: 1.1em;
-  color: $text-color-1;
+  @include text_adjustable(0.8em, 0.3vw, $text-color-1)
 }
 ul{
   list-style-type: none;
@@ -109,6 +126,7 @@ main{
   top: 0;
   left: -15%;
   width: 30%;
+  min-width: 300px;
   aspect-ratio: 1 / 1;
   background-image: linear-gradient(-35deg, $background-color-1 30%, rgba(255, 255, 255, 0)), url(./assets/image.png);
   z-index: -1;
@@ -121,6 +139,7 @@ main{
   position: absolute;
   right: -12.5%;
   bottom: -7.5%;
+  min-width: 300px;
   aspect-ratio: 1 / 1;
   background-image: linear-gradient(135deg, $background-color-1 30%, rgba(255, 255, 255, 0)), url(./assets/image.png);
   z-index: -1;
@@ -133,7 +152,7 @@ main{
 
 .main{
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,7 +216,7 @@ main{
 }
 .home-mods-main{
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -206,35 +225,34 @@ main{
 }
 .home-mods-part{
   width: 100%;
-  height: 24%;
+  height: auto;
   display: flex;
   flex-direction: row;
   transform: perspective(1px) translateZ(0);
   transition-duration: 0.3s;
   transition-property: transform;
   overflow: hidden;
-  // color: $text-color-2;
+  flex-wrap: wrap;
+  margin-top: 1%;
   &:hover{
       transform: scale(1.01);
       border-top: 1px solid $accent-color;
       border-bottom: 1px solid $accent-color;
-      // color: $text-color-1;
   }
   &:active{
       transform: scale(1.01);
       border-top: 1px solid $accent-color;
       border-bottom: 1px solid $accent-color;
-      // color: $text-color-1;
   }
   &:active{
       transform: scale(1.01);
       border-top: 1px solid $accent-color;
       border-bottom: 1px solid $accent-color;
-      // color: $text-color-1;
   }
 }
 .home-mods-part-text{
-  width: auto;
+  width: 60%;
+  min-width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -248,21 +266,24 @@ main{
     }
   }
   input{
-    background-color: $accent-color;
-    width: 30%;
-    height: 15%;
-    border-radius: 10px;
-    border: none;
-    font-size: 0.9em;
+    @include input_button_adjustable(30%, 15%, $accent-color, $background-color-2, 0.9em);
+    
     &:hover, &:active, &:focus{
-      border: 2px solid $accent-color;
-      background-color: $background-color-2;
-      color: $text-color-1;
-    } 
-  }
+      outline: 2px solid $accent-color;
+      outline-offset: -2px;
+      border: none;
+    }
+
+    @media screen and (max-width: 1700px) {
+      border-radius: 3.5px;
+      margin: 2.5% 0 7.5% 0;
+      min-height: 15%;
+    }
+}
 }
 .home-mods-part-img{
-  height: 100%;
+  width: 40%;
+  min-width: 350px;
   aspect-ratio: 16 / 9;
 
   img{
@@ -279,10 +300,11 @@ main{
 }
 #info-text-main{
   width: 70%;
-  height: 40vh;
+  height: auto;
   display: flex;
   flex-direction: row;
   margin-top: 5%;
+  flex-wrap: wrap;
 }
 .info-text-contacts{
   display: flex;
@@ -293,13 +315,14 @@ main{
 }
 #info-text-logo{
   width: 50%;
-  // height: 60%;
   filter: drop-shadow(0 0 15px $background-color-2);
 }
 #info-map{
   width: 60%;
-  height: 100%;
+  height: auto;
   overflow: hidden;
+  min-width: 400px;
+  aspect-ratio: 1 / 1;
 }
 
 #news-text{
@@ -319,7 +342,6 @@ main{
   }
   p{
     padding: 2.5%;
-    font-size: 1.05em;
   }
 }
 .news-part-img{
@@ -335,15 +357,13 @@ main{
   justify-content: center;
   height: 100%;
   input{
-    height: 33vh;
-    background-color: $accent-color;
-    border: none;
+    @include input_button_adjustable(100%, 33vh, $accent-color, $background-color-3, 0.9em);
     text-wrap: wrap;
+    border-radius: 0;
     &:hover, &:active, &:focus{
-      background-color: $background-color-3;
       outline: 2px solid $accent-color;
       outline-offset: -2px;
-      color: $text-color-1;
+      border: none;
     }
   }
 }
