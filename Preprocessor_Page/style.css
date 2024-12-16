@@ -64,9 +64,10 @@ header {
 
 #header-img-main {
   height: 95%;
-  background-image: linear-gradient(to top, rgb(68, 68, 68) 0.25%, rgba(255, 255, 255, 0)), url(./assets/screenshot_00050.png);
-  background-position: center;
+  background-image: linear-gradient(to top, rgb(68, 68, 68) 0.25%, rgba(255, 255, 255, 0)), url(./assets/header_fon.jpg);
   background-repeat: no-repeat;
+  background-position: 0 80%;
+  background-size: cover;
 }
 
 #header-nav {
@@ -120,6 +121,7 @@ main {
   min-width: 300px;
   aspect-ratio: 1/1;
   background-image: linear-gradient(-35deg, rgb(23, 23, 23) 30%, rgba(255, 255, 255, 0)), url(./assets/image.png);
+  background-color: rgb(220, 0, 0);
   z-index: -1;
   overflow: hidden;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
@@ -135,6 +137,7 @@ main {
   min-width: 300px;
   aspect-ratio: 1/1;
   background-image: linear-gradient(135deg, rgb(23, 23, 23) 30%, rgba(255, 255, 255, 0)), url(./assets/image.png);
+  background-color: rgb(220, 0, 0);
   z-index: -1;
   width: 30%;
   overflow: hidden;
@@ -409,6 +412,8 @@ main {
 .news-part-img {
   width: 40%;
   aspect-ratio: 16/9;
+  display: flex;
+  align-items: center;
 }
 .news-part-img img {
   width: 100%;

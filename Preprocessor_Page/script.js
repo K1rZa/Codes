@@ -102,20 +102,20 @@ let swiper = new Swiper(".home-gallery-main", {
       }
     };
   
-    const randomStepLinkTournament = document.getElementById("header-nav-tournament");
-    const randomStepLinkEffectTournament = {
-      element: randomStepLinkTournament,
-      handler: svgBounceEffect,
-      nodes: [...randomStepLinkTournament.querySelectorAll("rect")],
-      config: {
-        offset: 10,
-        duration: 0.2,
-        random: true,
-        ease: "steps(10)",
-        y1: -20,
-        y2: 44
-      }
-    };
+    // const randomStepLinkTournament = document.getElementById("header-nav-tournament");
+    // const randomStepLinkEffectTournament = {
+    //   element: randomStepLinkTournament,
+    //   handler: svgBounceEffect,
+    //   nodes: [...randomStepLinkTournament.querySelectorAll("rect")],
+    //   config: {
+    //     offset: 10,
+    //     duration: 0.2,
+    //     random: true,
+    //     ease: "steps(10)",
+    //     y1: -20,
+    //     y2: 44
+    //   }
+    // };
   
     const randomStepLinkRegister = document.getElementById("header-nav-register");
     const randomStepLinkEffectRegister = {
@@ -135,7 +135,7 @@ let swiper = new Swiper(".home-gallery-main", {
     new SvgLinkEffect(randomStepLinkEffectHome);
     new SvgLinkEffect(randomStepLinkEffectInfo);
     new SvgLinkEffect(randomStepLinkEffectNews);
-    new SvgLinkEffect(randomStepLinkEffectTournament);
+    // new SvgLinkEffect(randomStepLinkEffectTournament);
     new SvgLinkEffect(randomStepLinkEffectRegister);
   });
    
