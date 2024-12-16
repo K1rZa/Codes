@@ -87,11 +87,11 @@ let swiper = new Swiper(".home-gallery-main", {
       }
     };
   
-    const randomStepLinkTournament1 = document.getElementById("header-nav-tournament-before");
-    const randomStepLinkEffectTournament1 = {
-      element: randomStepLinkTournament1,
+    const randomStepLinkNews = document.getElementById("header-nav-news");
+    const randomStepLinkEffectNews = {
+      element: randomStepLinkNews,
       handler: svgBounceEffect,
-      nodes: [...randomStepLinkTournament1.querySelectorAll("rect")],
+      nodes: [...randomStepLinkNews.querySelectorAll("rect")],
       config: {
         offset: 10,
         duration: 0.2,
@@ -102,11 +102,11 @@ let swiper = new Swiper(".home-gallery-main", {
       }
     };
   
-    const randomStepLinkTournament2 = document.getElementById("header-nav-tournament-after");
-    const randomStepLinkEffectTournament2 = {
-      element: randomStepLinkTournament2,
+    const randomStepLinkTournament = document.getElementById("header-nav-tournament");
+    const randomStepLinkEffectTournament = {
+      element: randomStepLinkTournament,
       handler: svgBounceEffect,
-      nodes: [...randomStepLinkTournament2.querySelectorAll("rect")],
+      nodes: [...randomStepLinkTournament.querySelectorAll("rect")],
       config: {
         offset: 10,
         duration: 0.2,
@@ -134,8 +134,8 @@ let swiper = new Swiper(".home-gallery-main", {
   
     new SvgLinkEffect(randomStepLinkEffectHome);
     new SvgLinkEffect(randomStepLinkEffectInfo);
-    new SvgLinkEffect(randomStepLinkEffectTournament1);
-    new SvgLinkEffect(randomStepLinkEffectTournament2);
+    new SvgLinkEffect(randomStepLinkEffectNews);
+    new SvgLinkEffect(randomStepLinkEffectTournament);
     new SvgLinkEffect(randomStepLinkEffectRegister);
   });
    

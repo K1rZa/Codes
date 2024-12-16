@@ -302,6 +302,52 @@ main{
   overflow: hidden;
 }
 
+#news-text{
+  margin: 5% 0;
+}
+.news-part{
+  display: flex;
+  flex-direction: row;
+  margin-top: 1%;
+  background-color: $background-color-3;
+  gap: 0.5%;
+}
+.news-part-text{
+  width: 60%;
+  h3{
+    padding: 3% 3% 0 3%;
+  }
+  p{
+    padding: 2.5%;
+    font-size: 1.05em;
+  }
+}
+.news-part-img{
+  width: 40%;
+  aspect-ratio: 16 / 9;
+  img{
+    width: 100%;
+  }
+}
+.news-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  input{
+    height: 33vh;
+    background-color: $accent-color;
+    border: none;
+    text-wrap: wrap;
+    &:hover, &:active, &:focus{
+      background-color: $background-color-3;
+      outline: 2px solid $accent-color;
+      outline-offset: -2px;
+      color: $text-color-1;
+    }
+  }
+}
+
 footer{
   margin-top: 10%;
   width: 100%;

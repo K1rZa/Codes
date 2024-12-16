@@ -313,6 +313,56 @@ main {
   overflow: hidden;
 }
 
+#news-text {
+  margin: 5% 0;
+}
+
+.news-part {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1%;
+  background-color: rgb(30, 30, 30);
+  gap: 0.5%;
+}
+
+.news-part-text {
+  width: 60%;
+}
+.news-part-text h3 {
+  padding: 3% 3% 0 3%;
+}
+.news-part-text p {
+  padding: 2.5%;
+  font-size: 1.05em;
+}
+
+.news-part-img {
+  width: 40%;
+  aspect-ratio: 16/9;
+}
+.news-part-img img {
+  width: 100%;
+}
+
+.news-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.news-buttons input {
+  height: 33vh;
+  background-color: rgb(220, 0, 0);
+  border: none;
+  text-wrap: wrap;
+}
+.news-buttons input:hover, .news-buttons input:active, .news-buttons input:focus {
+  background-color: rgb(30, 30, 30);
+  outline: 2px solid rgb(220, 0, 0);
+  outline-offset: -2px;
+  color: white;
+}
+
 footer {
   margin-top: 10%;
   width: 100%;
