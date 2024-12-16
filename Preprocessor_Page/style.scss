@@ -31,29 +31,32 @@ $accent-color:rgb(220, 0, 0);
 *{
   margin: 0;
   padding: 0;
+  font-family: "Tektur", serif;
+  font-style: normal;
+  font-weight: 200;
 }
 
 h1{
-  @include text_adjustable(2em, 3.5vw, $text-color-1)
+  @include text_adjustable(2em, 3vw, $text-color-1)
 }
 h2{
   border-bottom: 4px solid $accent-color;
   width: 100%;
-  @include text_adjustable(1.25em, 1.5vw, $text-color-1)
+  @include text_adjustable(1.25em, 1.25vw, $text-color-1)
 }
 h3{
   padding: 1%;
-  @include text_adjustable(0.9em, 1.05vw, $text-color-1)
+  @include text_adjustable(0.9em, 0.7vw, $text-color-1)
 }
 p{
-  @include text_adjustable(0.7em, 0.3vw, $text-color-2)
+  @include text_adjustable(0.7em, 0.2vw, $text-color-2)
 }
 span{
-  @include text_adjustable(0.8em, 0.3vw, $text-color-1)
+  @include text_adjustable(0.8em, 0.2vw, $text-color-1)
 }
 a{
   text-decoration: none;
-  @include text_adjustable(0.8em, 0.3vw, $text-color-1)
+  @include text_adjustable(0.8em, 0.2vw, $text-color-1)
 }
 ul{
   list-style-type: none;
@@ -119,6 +122,9 @@ main{
   align-items: center;
   gap: 5vh;
   position: relative;
+  @media screen and (max-width: 700px) {
+    width: 100%;
+  }
 }
 
 .img-decoration-top-left{
@@ -157,6 +163,9 @@ main{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @media screen and (max-width: 700px) {
+    align-items: center;
+  }
 }
 #home-greetings{
   display: flex;
@@ -171,6 +180,9 @@ main{
   flex-direction: column;
   align-items: flex-start;
   overflow: hidden;
+  @media screen and (max-width: 700px) {
+    width: 90%;
+  }
 }
 .home-gallery-main{
   width: 100%;
@@ -206,13 +218,18 @@ main{
 }
 #home-text{
   width: 80%;
-  
+  @media screen and (max-width: 700px) {
+    width: 90%;
+  }
 }
 #home-mods{
   width: 80%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  @media screen and (max-width: 700px) {
+    width: 90%;
+  }
 }
 .home-mods-main{
   width: 100%;
@@ -244,10 +261,13 @@ main{
       border-top: 1px solid $accent-color;
       border-bottom: 1px solid $accent-color;
   }
-  &:active{
+  &:focus{
       transform: scale(1.01);
       border-top: 1px solid $accent-color;
       border-bottom: 1px solid $accent-color;
+  }
+  @media screen and (max-width: 1700px) {
+    justify-content: center;
   }
 }
 .home-mods-part-text{
@@ -265,9 +285,12 @@ main{
       color: $text-color-1;
     }
   }
+  @media screen and (max-width: 1400px) {
+    padding:5% 0 0 0;
+  }
   input{
     @include input_button_adjustable(30%, 15%, $accent-color, $background-color-2, 0.9em);
-    
+    font-size: calc(0.6em + 0.3vw);
     &:hover, &:active, &:focus{
       outline: 2px solid $accent-color;
       outline-offset: -2px;
@@ -297,6 +320,7 @@ main{
 }
 #info-text{
   margin-top: 5%;
+  text-align: center;
 }
 #info-text-main{
   width: 70%;
@@ -305,6 +329,9 @@ main{
   flex-direction: row;
   margin-top: 5%;
   flex-wrap: wrap;
+  @media screen and (max-width: 1210px) {
+    justify-content: center;
+  }
 }
 .info-text-contacts{
   display: flex;
@@ -343,6 +370,9 @@ main{
   p{
     padding: 2.5%;
   }
+  @media screen and (max-width: 1440px) {
+    width: 100%;
+  }
 }
 .news-part-img{
   width: 40%;
@@ -350,16 +380,20 @@ main{
   img{
     width: 100%;
   }
+  @media screen and (max-width: 1440px) {
+    display: none;
+  }
 }
 .news-buttons{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: auto;
   input{
-    @include input_button_adjustable(100%, 33vh, $accent-color, $background-color-3, 0.9em);
+    @include input_button_adjustable(100%, 100%, $accent-color, $background-color-3, 0.9em);
     text-wrap: wrap;
     border-radius: 0;
+    font-size: calc(0.6em + 0.3vw);
     &:hover, &:active, &:focus{
       outline: 2px solid $accent-color;
       outline-offset: -2px;

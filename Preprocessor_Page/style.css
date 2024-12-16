@@ -1,39 +1,42 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Tektur", serif;
+  font-style: normal;
+  font-weight: 200;
 }
 
 h1 {
-  font-size: calc(2em + 3.5vw);
+  font-size: calc(2em + 3vw);
   color: white;
 }
 
 h2 {
   border-bottom: 4px solid rgb(220, 0, 0);
   width: 100%;
-  font-size: calc(1.25em + 1.5vw);
+  font-size: calc(1.25em + 1.25vw);
   color: white;
 }
 
 h3 {
   padding: 1%;
-  font-size: calc(0.9em + 1.05vw);
+  font-size: calc(0.9em + 0.7vw);
   color: white;
 }
 
 p {
-  font-size: calc(0.7em + 0.3vw);
+  font-size: calc(0.7em + 0.2vw);
   color: rgb(180, 180, 180);
 }
 
 span {
-  font-size: calc(0.8em + 0.3vw);
+  font-size: calc(0.8em + 0.2vw);
   color: white;
 }
 
 a {
   text-decoration: none;
-  font-size: calc(0.8em + 0.3vw);
+  font-size: calc(0.8em + 0.2vw);
   color: white;
 }
 
@@ -103,6 +106,11 @@ main {
   gap: 5vh;
   position: relative;
 }
+@media screen and (max-width: 700px) {
+  main {
+    width: 100%;
+  }
+}
 
 .img-decoration-top-left {
   position: absolute;
@@ -144,6 +152,11 @@ main {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (max-width: 700px) {
+  .main {
+    align-items: center;
+  }
+}
 
 #home-greetings {
   display: flex;
@@ -159,6 +172,11 @@ main {
   flex-direction: column;
   align-items: flex-start;
   overflow: hidden;
+}
+@media screen and (max-width: 700px) {
+  #home-gallery {
+    width: 90%;
+  }
 }
 
 .home-gallery-main {
@@ -198,12 +216,22 @@ main {
 #home-text {
   width: 80%;
 }
+@media screen and (max-width: 700px) {
+  #home-text {
+    width: 90%;
+  }
+}
 
 #home-mods {
   width: 80%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+@media screen and (max-width: 700px) {
+  #home-mods {
+    width: 90%;
+  }
 }
 
 .home-mods-main {
@@ -237,10 +265,15 @@ main {
   border-top: 1px solid rgb(220, 0, 0);
   border-bottom: 1px solid rgb(220, 0, 0);
 }
-.home-mods-part:active {
+.home-mods-part:focus {
   transform: scale(1.01);
   border-top: 1px solid rgb(220, 0, 0);
   border-bottom: 1px solid rgb(220, 0, 0);
+}
+@media screen and (max-width: 1700px) {
+  .home-mods-part {
+    justify-content: center;
+  }
 }
 
 .home-mods-part-text {
@@ -259,6 +292,11 @@ main {
 .home-mods-part-text:hover p, .home-mods-part-text:active p, .home-mods-part-text:focus p {
   color: white;
 }
+@media screen and (max-width: 1400px) {
+  .home-mods-part-text {
+    padding: 5% 0 0 0;
+  }
+}
 .home-mods-part-text input {
   background-color: rgb(220, 0, 0);
   width: 30%;
@@ -266,6 +304,7 @@ main {
   border-radius: 10px;
   border: none;
   font-size: 0.9em;
+  font-size: calc(0.6em + 0.3vw);
 }
 .home-mods-part-text input:hover, .home-mods-part-text input:active, .home-mods-part-text input:focus {
   border: 2px solid rgb(220, 0, 0);
@@ -302,6 +341,7 @@ main {
 
 #info-text {
   margin-top: 5%;
+  text-align: center;
 }
 
 #info-text-main {
@@ -311,6 +351,11 @@ main {
   flex-direction: row;
   margin-top: 5%;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 1210px) {
+  #info-text-main {
+    justify-content: center;
+  }
 }
 
 .info-text-contacts {
@@ -355,6 +400,11 @@ main {
 .news-part-text p {
   padding: 2.5%;
 }
+@media screen and (max-width: 1440px) {
+  .news-part-text {
+    width: 100%;
+  }
+}
 
 .news-part-img {
   width: 40%;
@@ -363,22 +413,28 @@ main {
 .news-part-img img {
   width: 100%;
 }
+@media screen and (max-width: 1440px) {
+  .news-part-img {
+    display: none;
+  }
+}
 
 .news-buttons {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: auto;
 }
 .news-buttons input {
   background-color: rgb(220, 0, 0);
   width: 100%;
-  height: 33vh;
+  height: 100%;
   border-radius: 10px;
   border: none;
   font-size: 0.9em;
   text-wrap: wrap;
   border-radius: 0;
+  font-size: calc(0.6em + 0.3vw);
 }
 .news-buttons input:hover, .news-buttons input:active, .news-buttons input:focus {
   border: 2px solid rgb(220, 0, 0);

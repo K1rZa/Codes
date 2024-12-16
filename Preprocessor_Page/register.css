@@ -1,6 +1,9 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Tektur", serif;
+  font-style: normal;
+  font-weight: 200;
 }
 
 main {
@@ -16,13 +19,14 @@ main {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: calc(2em + 3vw);
   color: black;
+  font-weight: 500;
 }
 
 a {
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: calc(0.8em + 0.2vw);
   color: rgb(150, 150, 150);
 }
 a:hover, a:active, a:focus {
@@ -33,6 +37,7 @@ a:hover, a:active, a:focus {
   display: flex;
   flex-direction: column;
   width: 30%;
+  min-width: 400px;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -88,7 +93,7 @@ a:hover, a:active, a:focus {
   border: none;
   background-color: rgb(220, 0, 0);
   color: black;
-  font-size: 1.1em;
+  font-size: calc(0.8em + 0.3vw);
 }
 .reg-form-button-main:hover, .reg-form-button-main:active, .reg-form-button-main:focus {
   background-color: rgba(255, 255, 255, 0.15);
