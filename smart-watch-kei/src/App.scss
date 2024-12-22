@@ -4,7 +4,7 @@
   display: flex;
 }
 
-main{
+#buttonsScreen{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,10 +13,22 @@ main{
   min-width: 280px;
   min-height: 280px;
   background-color: rgb(50, 50, 50);
-
-  input{
+  button{
     width: 95%;
     height: 12vh;
     font-size: 1.2em;
   }
+}
+
+#scheduleScreen{
+  display: none;
+  min-width: 280px;
+  min-height: 280px;
+  background-color: crimson;
+}
+#changesScreen{
+  display: none;
+  min-width: 280px;
+  min-height: 280px;
+  background-color: aqua;
 }
