@@ -1,24 +1,21 @@
 import "./App.scss"
-import React, { useRef } from 'react';
+import React, { useRef } from 'react'
 
 function App() {
-  const buttonsScreen_Ref = useRef(null);
-  const scheduleScreen_Ref = useRef(null);
-  const changesScreen_Ref = useRef(null);
+  const buttonsScreen_Ref = useRef(null)
+  const scheduleScreen_Ref = useRef(null)
+  const changesScreen_Ref = useRef(null)
 
   function goToSchedule() {
     if (scheduleScreen_Ref.current && changesScreen_Ref.current && buttonsScreen_Ref.current) {
-      scheduleScreen_Ref.current.style.display = 'flex';
-      changesScreen_Ref.current.style.display = 'none';
-      buttonsScreen_Ref.current.style.display = 'none';
+      scheduleScreen_Ref.current.style.display = 'flex'
+      buttonsScreen_Ref.current.style.display = 'none'
     }
   }
-
   function goToChanges() {
     if (changesScreen_Ref.current && scheduleScreen_Ref.current && buttonsScreen_Ref.current) {
-      changesScreen_Ref.current.style.display = 'flex';
-      scheduleScreen_Ref.current.style.display = 'none';
-      buttonsScreen_Ref.current.style.display = 'none';
+      changesScreen_Ref.current.style.display = 'flex'
+      buttonsScreen_Ref.current.style.display = 'none'
     }
   }
 
