@@ -34,6 +34,7 @@ function App() {
   return (
     <div className="App">
       <div ref={buttonsScreen_Ref} id="buttonsScreen">
+        <button id="groupMainButton">"Группа"</button>
         <button id="scheduleMainButton" onClick={goToSchedule}>Расписание</button>
         <button id="changesMainButton" onClick={goToChanges}>Изменения</button>
       </div>
@@ -44,3 +45,10 @@ function App() {
 }
 
 export default App;
+
+
+/*
+Экран расписания:
+  Свайп вверх (или вниз) - смена недели "Вверх - следующая, Вниз - предыдущая"
+  Свайп влево (или вправо) - открытие дня недели "Влево - следующий, Вправо - предыдущий"
+*/
