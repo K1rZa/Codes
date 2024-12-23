@@ -1,6 +1,7 @@
 import "./App.scss"
 import React, { useRef } from 'react'
 import { useDoubleTap } from 'use-double-tap'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 function App() {
   const buttonsScreen_Ref = useRef(null)
@@ -30,6 +31,27 @@ function App() {
     goToButtonsScreen()
   })
   
+  class ExercisePart extends React.Component{
+    render(){
+      return (
+        <div className="exerciseMain">
+          <div className="exerciseNumber">
+            <span>{this.props.exerciseNumber}</span>
+          </div>
+        <div className="exerciseName">
+          <span>{this.props.exerciseName}</span>
+          <span>{this.props.exerciseTeacher}</span>
+        </div>
+        <div className="exerciseClass">
+          <span>{this.props.exerciseClass}</span>
+        </div>
+        <div className="exerciseTime">
+          <span>{this.props.exerciseTime}</span>
+        </div>
+      </div>
+      )
+    }
+  }
 
   return (
     <div className="App">
@@ -38,7 +60,36 @@ function App() {
         <button id="scheduleMainButton" onClick={goToSchedule}>Расписание</button>
         <button id="changesMainButton" onClick={goToChanges}>Изменения</button>
       </div>
-      <div ref={scheduleScreen_Ref} id="scheduleScreen" {...doubleTap}></div>
+      <div ref={scheduleScreen_Ref} id="scheduleScreen" {...doubleTap}>
+        <Swiper id="Swiper">
+          <SwiperSlide className="SwiperSlide">
+            <ExercisePart 
+            exerciseNumber="1" 
+            exerciseName="Название предмета" 
+            exerciseTeacher="Преподаватель" 
+            exerciseClass="1-301" 
+            exerciseTime="11:30 12:50"/>
+            <ExercisePart 
+            exerciseNumber="1" 
+            exerciseName="Название предмета" 
+            exerciseTeacher="Преподаватель" 
+            exerciseClass="1-301" 
+            exerciseTime="11:30 12:50"/>
+            <ExercisePart 
+            exerciseNumber="1" 
+            exerciseName="Название предмета" 
+            exerciseTeacher="Преподаватель" 
+            exerciseClass="1-301" 
+            exerciseTime="11:30 12:50"/>
+            <ExercisePart 
+            exerciseNumber="1" 
+            exerciseName="Название предмета" 
+            exerciseTeacher="Преподаватель" 
+            exerciseClass="1-301" 
+            exerciseTime="11:30 12:50"/>
+          </SwiperSlide>
+        </Swiper>
+      </div>
       <div ref={changesScreen_Ref} id="changesScreen" {...doubleTap}></div>
     </div>
   );
