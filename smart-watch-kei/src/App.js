@@ -61,32 +61,118 @@ function App() {
         <button id="changesMainButton" onClick={goToChanges}>Изменения</button>
       </div>
       <div ref={scheduleScreen_Ref} id="scheduleScreen" {...doubleTap}>
-        <Swiper id="Swiper">
-          <SwiperSlide className="SwiperSlide">
-            <ExercisePart 
-            exerciseNumber="1" 
-            exerciseName="Название предмета" 
-            exerciseTeacher="Преподаватель" 
-            exerciseClass="1-301" 
-            exerciseTime="11:30 12:50"/>
-            <ExercisePart 
-            exerciseNumber="1" 
-            exerciseName="Название предмета" 
-            exerciseTeacher="Преподаватель" 
-            exerciseClass="1-301" 
-            exerciseTime="11:30 12:50"/>
-            <ExercisePart 
-            exerciseNumber="1" 
-            exerciseName="Название предмета" 
-            exerciseTeacher="Преподаватель" 
-            exerciseClass="1-301" 
-            exerciseTime="11:30 12:50"/>
-            <ExercisePart 
-            exerciseNumber="1" 
-            exerciseName="Название предмета" 
-            exerciseTeacher="Преподаватель" 
-            exerciseClass="1-301" 
-            exerciseTime="11:30 12:50"/>
+        <Swiper id="SwiperMain" slidesPerView={1} direction="vertical">
+          <SwiperSlide className="SwiperSlideMain">
+            <Swiper id="Swiper" slidesPerView={1} direction="horizontal">
+              <SwiperSlide className="SwiperSlide">
+                <ExercisePart 
+                exerciseNumber="1" 
+                exerciseName="Название предмета" 
+                exerciseTeacher="Преподаватель" 
+                exerciseClass="1-301" 
+                exerciseTime="11:30 12:50"/>
+                <ExercisePart 
+                exerciseNumber="1" 
+                exerciseName="Название предмета" 
+                exerciseTeacher="Преподаватель" 
+                exerciseClass="1-301" 
+                exerciseTime="11:30 12:50"/>
+                <ExercisePart 
+                exerciseNumber="1" 
+                exerciseName="Название предмета" 
+                exerciseTeacher="Преподаватель" 
+                exerciseClass="1-301" 
+                exerciseTime="11:30 12:50"/>
+                <ExercisePart 
+                exerciseNumber="1" 
+                exerciseName="Название предмета" 
+                exerciseTeacher="Преподаватель" 
+                exerciseClass="1-301" 
+                exerciseTime="11:30 12:50"/>
+              </SwiperSlide>
+              <SwiperSlide className="SwiperSlide">
+                <ExercisePart 
+                exerciseNumber="1" 
+                exerciseName="Название предмета" 
+                exerciseTeacher="Преподаватель" 
+                exerciseClass="1-301" 
+                exerciseTime="11:30 12:50"/>
+                <ExercisePart 
+                exerciseNumber="1" 
+                exerciseName="Название предмета" 
+                exerciseTeacher="Преподаватель" 
+                exerciseClass="1-301" 
+                exerciseTime="11:30 12:50"/>
+                <ExercisePart 
+                exerciseNumber="1" 
+                exerciseName="Название предмета" 
+                exerciseTeacher="Преподаватель" 
+                exerciseClass="1-301" 
+                exerciseTime="11:30 12:50"/>
+                <ExercisePart 
+                exerciseNumber="1" 
+                exerciseName="Название предмета" 
+                exerciseTeacher="Преподаватель" 
+                exerciseClass="1-301" 
+                exerciseTime="11:30 12:50"/>
+              </SwiperSlide>
+            </Swiper>
+          </SwiperSlide>
+          <SwiperSlide className="SwiperSlideMain">
+            <Swiper id="Swiper" slidesPerView={1} direction="horizontal">
+              <SwiperSlide className="SwiperSlide">
+                <ExercisePart 
+                exerciseNumber="1" 
+                exerciseName="Название предмета" 
+                exerciseTeacher="Преподаватель" 
+                exerciseClass="1-301" 
+                exerciseTime="11:30 12:50"/>
+                <ExercisePart 
+                exerciseNumber="1" 
+                exerciseName="Название предмета" 
+                exerciseTeacher="Преподаватель" 
+                exerciseClass="1-301" 
+                exerciseTime="11:30 12:50"/>
+                <ExercisePart 
+                exerciseNumber="1" 
+                exerciseName="Название предмета" 
+                exerciseTeacher="Преподаватель" 
+                exerciseClass="1-301" 
+                exerciseTime="11:30 12:50"/>
+                <ExercisePart 
+                exerciseNumber="1" 
+                exerciseName="Название предмета" 
+                exerciseTeacher="Преподаватель" 
+                exerciseClass="1-301" 
+                exerciseTime="11:30 12:50"/>
+              </SwiperSlide>
+              <SwiperSlide className="SwiperSlide">
+                <ExercisePart 
+                exerciseNumber="1" 
+                exerciseName="Название предмета" 
+                exerciseTeacher="Преподаватель" 
+                exerciseClass="1-301" 
+                exerciseTime="11:30 12:50"/>
+                <ExercisePart 
+                exerciseNumber="1" 
+                exerciseName="Название предмета" 
+                exerciseTeacher="Преподаватель" 
+                exerciseClass="1-301" 
+                exerciseTime="11:30 12:50"/>
+                <ExercisePart 
+                exerciseNumber="1" 
+                exerciseName="Название предмета" 
+                exerciseTeacher="Преподаватель" 
+                exerciseClass="1-301" 
+                exerciseTime="11:30 12:50"/>
+                <ExercisePart 
+                exerciseNumber="1" 
+                exerciseName="Название предмета" 
+                exerciseTeacher="Преподаватель" 
+                exerciseClass="1-301" 
+                exerciseTime="11:30 12:50"/>
+              </SwiperSlide>
+            </Swiper>
           </SwiperSlide>
         </Swiper>
       </div>
