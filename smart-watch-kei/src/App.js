@@ -65,12 +65,14 @@ function App() {
           <SwiperSlide className="SwiperSlideMain">
             <Swiper id="Swiper" slidesPerView={1} direction="horizontal">
               <SwiperSlide className="SwiperSlide">
+                <p>Неделя 1 - Понедельник</p>
                 <ExercisePart/>
                 <ExercisePart/>
                 <ExercisePart/>
                 <ExercisePart/>
               </SwiperSlide>
               <SwiperSlide className="SwiperSlide">
+                <p>Неделя 1 - Вторник</p>
                 <ExercisePart/>
                 <ExercisePart/>
                 <ExercisePart/>
@@ -81,12 +83,14 @@ function App() {
           <SwiperSlide className="SwiperSlideMain">
             <Swiper id="Swiper" slidesPerView={1} direction="horizontal">
               <SwiperSlide className="SwiperSlide">
+                <p>Неделя 2 - Понедельник</p>
                 <ExercisePart/>
                 <ExercisePart/>
                 <ExercisePart/>
                 <ExercisePart/>
               </SwiperSlide>
               <SwiperSlide className="SwiperSlide">
+                <p>Неделя 2 - Вторник</p>
                 <ExercisePart/>
                 <ExercisePart/>
                 <ExercisePart/>
