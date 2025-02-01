@@ -3,22 +3,24 @@
     // padding: 0;
 // }
 
-a{
-    color: black;
-    text-decoration: none;
+@mixin flex-center{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+a{
+    @include flex_center;
+    color: black;
+    text-decoration: none;
     &:hover{
         background-color: green;
     }
 }
 
 body{
-    display: flex;
+    @include flex_center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 header{
@@ -43,10 +45,9 @@ nav{
 }
 
 main{
-    display: flex;
+    @include flex_center;
     flex-direction: column;
     width: 80%;
-    align-items: center;
     margin-bottom: 5%;
 }
 
@@ -59,11 +60,9 @@ footer{
     align-items: center;
 }
 .footer_contacts, .footer_useful_links{
-    display: flex;
+    @include flex_center;
     flex-direction: column;
     width: 40%;
     height: 90%;
     gap: 10%;
-    justify-content: center;
-    align-items: center;
 }

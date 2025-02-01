@@ -1,6 +1,8 @@
 main {
-  flex-direction: row;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
   padding-top: 5vh;
 }
 
@@ -12,24 +14,26 @@ main {
 
 #profile_personal_info {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 30%;
-  align-items: center;
   gap: 1.5vh;
 }
 #profile_personal_info span {
-  background-color: blue;
-  width: 60%;
-  height: 4vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: blue;
+  width: 60%;
+  height: 4vh;
   border-radius: 7.5px;
 }
 #profile_personal_info #profile_personal_hidden {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   gap: 1.5vh;
 }/*# sourceMappingURL=profile.css.map */

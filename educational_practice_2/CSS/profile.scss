@@ -1,6 +1,12 @@
-main{
-    flex-direction: row;
+@mixin flex-center{
+    display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+main{
+    @include flex_center;
+    flex-direction: row;
     padding-top: 5vh;
 }
 #profile_photo{
@@ -9,25 +15,21 @@ main{
     background-color: grey;
 }
 #profile_personal_info{
-    display: flex;
+    @include flex-center;
     flex-direction: column;
     width: 30%;
     // height: 100%;
-    align-items: center;
     gap: 1.5vh;
     span{
+        @include flex_center;
         background-color: blue;
         width: 60%;
         height: 4vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         border-radius: 7.5px;
     }
     #profile_personal_hidden{
-        display: flex;
+        @include flex_center;
         flex-direction: column;
-        align-items: center;
         width: 100%;
         gap: 1.5vh;
     }

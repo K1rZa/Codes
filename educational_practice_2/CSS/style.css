@@ -1,9 +1,9 @@
 a {
-  color: black;
-  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: black;
+  text-decoration: none;
 }
 a:hover {
   background-color: green;
@@ -11,9 +11,9 @@ a:hover {
 
 body {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 header {
@@ -38,9 +38,10 @@ nav {
 
 main {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 80%;
-  align-items: center;
   margin-bottom: 5%;
 }
 
@@ -55,10 +56,10 @@ footer {
 
 .footer_contacts, .footer_useful_links {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 40%;
   height: 90%;
   gap: 10%;
-  justify-content: center;
-  align-items: center;
 }/*# sourceMappingURL=style.css.map */
