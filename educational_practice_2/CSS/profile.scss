@@ -1,8 +1,4 @@
-@mixin flex-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+@import "./mixin.scss";
 
 main{
     @include flex_center;
