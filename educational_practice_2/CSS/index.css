@@ -1,0 +1,21 @@
+#main_company_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#company_gallery {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.company_img {
+  aspect-ratio: 1/1;
+  background-color: grey;
+  width: 300px;
+  margin-bottom: 2.5%;
+}/*# sourceMappingURL=index.css.map */

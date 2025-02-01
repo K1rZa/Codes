@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.App {
+  width: 260px;
+  height: 260px;
+}
+
+#buttonsScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(70, 70, 70);
+}
+#buttonsScreen button {
+  width: 95%;
+  height: 40%;
+  font-size: 1em;
+  border-radius: 10px;
+  border: none;
+}
+#buttonsScreen #groupMainButton {
+  height: 22.5%;
+  border-radius: 0 0 8px 8px;
+  background-color: #0d6efd;
+  color: white;
+}
+#buttonsScreen #changesMainButton {
+  height: 32.5%;
+  border-radius: 10px 10px 0 0;
+}
+
+#scheduleScreen, #changesScreen {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(70, 70, 70);
+  overflow: hidden;
+}
+
+#SwiperMain {
+  width: 100%;
+  height: 100%;
+}
+#SwiperMain .swiper-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+#Swiper {
+  width: 100%;
+  height: 100%;
+}
+#Swiper .swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.SwiperSlideMain {
+  width: 100%;
+  min-height: 100%;
+}
+
+.SwiperSlide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1%;
+  min-width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.exerciseMain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0d6efd;
+  font-size: 0.8em;
+  width: 99%;
+  height: 22.25%;
+  border-radius: 5px;
+  outline: 2px solid black;
+  outline-offset: -2px;
+}
+
+.exerciseNumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7.5%;
+}
+
+.exerciseName {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 57%;
+  height: 100%;
+}
+
+.exerciseClass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+}
+
+.exerciseTime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-wrap: wrap;
+  width: 15%;
+  text-align: center;
+}/*# sourceMappingURL=App.css.map */
