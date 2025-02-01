@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/account.css">
     <title>Личный кабинет</title>
 </head>
 <body>
@@ -23,21 +24,75 @@
         <a href="./order.html">Создать новый заказ</a>
 
         <div id="past_orders">
-            <div class="past_order">
-                <div class="order_number">1</div>
-                <div class="order_name">Имя заказа</div>
-                <div class="order_time_create">Время создания заказа</div>
-                <div class="order_time_start">Время начала заказа</div>
-                <div class="order_time_end">Время завершения заказа</div>
-                <div class="order_price">Стоимость заказа</div>
-                <div class="order_service">Услуга</div>
-                <div class="order_number">Номер для связи</div>
-                <div class="order_email">Эл.адрес для связи</div>
-                <div class="order_fio">Имя заказчика</div>
-                <div class="order_address">Адрес</div>
-                <div class="order_mail">Почтовый индекс</div>
-                <div class="order_id">Уникальный код заказа</div>
-            </div>
+            <table align="center">
+                <thead>
+                    <tr>
+                        <th scope="col">Номер</th>
+                        <th scope="col">Имя заказа</th>
+                        <th scope="col">Время создания</th>
+                        <th scope="col">Время начала</th>
+                        <th scope="col">Время завершения</th>
+                        <th scope="col">Стоимость</th>
+                        <th scope="col">Услуга</th>
+                        <th scope="col">Номер клиента</th>
+                        <th scope="col">Эл.адрес клиента</th>
+                        <th scope="col">Имя клиента</th>
+                        <th scope="col">Адрес</th>
+                        <th scope="col">Почтовый индекс</th>
+                        <th scope="col">Уникальный код</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Заказ 1</td>
+                        <td>12-00</td>
+                        <td>14-00</td>
+                        <td>18-00</td>
+                        <td>6000</td>
+                        <td>Услуга 1</td>
+                        <td>8 965 800 56 47</td>
+                        <td>test@gmail.com</td>
+                        <td>Николай</td>
+                        <td>Промышленная 15</td>
+                        <td>7336</td>
+                        <td>ui1</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Заказ 1</td>
+                        <td>12-00</td>
+                        <td>14-00</td>
+                        <td>18-00</td>
+                        <td>6000</td>
+                        <td>Услуга 1</td>
+                        <td>8 965 800 56 47</td>
+                        <td>test@gmail.com</td>
+                        <td>Николай</td>
+                        <td>Промышленная 15</td>
+                        <td>7336</td>
+                        <td>ui1</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Заказ 1</td>
+                        <td>12-00</td>
+                        <td>14-00</td>
+                        <td>18-00</td>
+                        <td>6000</td>
+                        <td>Услуга 1</td>
+                        <td>8 965 800 56 47</td>
+                        <td>test@gmail.com</td>
+                        <td>Николай</td>
+                        <td>Промышленная 15</td>
+                        <td>7336</td>
+                        <td>ui1</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <button id="remove_past_orders">Удалить выбранные заказы</button>

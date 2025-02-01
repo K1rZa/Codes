@@ -24,7 +24,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 7.5px;
 }
 #profile_personal_info #profile_personal_hidden {
   display: flex;
