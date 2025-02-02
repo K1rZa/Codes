@@ -78,6 +78,33 @@ function App() {
                 <ExercisePart/>
                 <ExercisePart/>
               </SwiperSlide>
+              <SwiperSlide className="SwiperSlide">
+                <p>Неделя 1 - Среда</p>
+                <ExercisePart/>
+                <ExercisePart/>
+                <ExercisePart/>
+                <ExercisePart/>
+              </SwiperSlide>
+              <SwiperSlide className="SwiperSlide">
+                <p>Неделя 1 - Четверг</p>
+                <ExercisePart/>
+                <ExercisePart/>
+                <ExercisePart/>
+              </SwiperSlide>
+              <SwiperSlide className="SwiperSlide">
+                <p>Неделя 1 - Пятница</p>
+                <ExercisePart/>
+                <ExercisePart/>
+                <ExercisePart/>
+                <ExercisePart/>
+              </SwiperSlide>
+              <SwiperSlide className="SwiperSlide">
+                <p>Неделя 1 - Суббота</p>
+                <ExercisePart/>
+                <ExercisePart/>
+                <ExercisePart/>
+                <ExercisePart/>
+              </SwiperSlide>
             </Swiper>
           </SwiperSlide>
           <SwiperSlide className="SwiperSlideMain">
@@ -96,11 +123,43 @@ function App() {
                 <ExercisePart/>
                 <ExercisePart/>
               </SwiperSlide>
+              <SwiperSlide className="SwiperSlide">
+                <p>Неделя 2 - Среда</p>
+              </SwiperSlide>
+              <SwiperSlide className="SwiperSlide">
+                <p>Неделя 2 - Четверг</p>
+                <ExercisePart/>
+                <ExercisePart/>
+                <ExercisePart/>
+                <ExercisePart/>
+              </SwiperSlide>
+              <SwiperSlide className="SwiperSlide">
+                <p>Неделя 2 - Пятница</p>
+                <ExercisePart/>
+                <ExercisePart/>
+              </SwiperSlide>
             </Swiper>
           </SwiperSlide>
         </Swiper>
       </div>
-      <div ref={changesScreen_Ref} id="changesScreen" {...doubleTap}></div>
+      <div ref={changesScreen_Ref} id="changesScreen" {...doubleTap}>
+      <Swiper id="Swiper" slidesPerView={1} direction="horizontal">
+              <SwiperSlide className="SwiperSlide">
+                <p>День 1</p>
+                <ExercisePart/>
+                <ExercisePart/>
+                <ExercisePart/>
+                <ExercisePart/>
+              </SwiperSlide>
+              <SwiperSlide className="SwiperSlide">
+                <p>День 2</p>
+                <ExercisePart/>
+                <ExercisePart/>
+                <ExercisePart/>
+                <ExercisePart/>
+              </SwiperSlide>
+            </Swiper>
+      </div>
     </div>
   );
 }
