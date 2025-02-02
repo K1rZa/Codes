@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/order.css">
     <title>Создание заказа</title>
 </head>
 <body>
@@ -18,43 +19,45 @@
     </header>
     <main>
         <h1>Мы ждём ваш заказ!</h1>
-
-        <div id="order_type_main">
-            <div class="order_type">
-                <span>Тип 1</span>
-                <input type="checkbox">
-            </div>            
-            <div class="order_type">
-                <span>Тип 2</span>
-                <input type="checkbox">
-            </div>            
-            <div class="order_type">
-                <span>Тип 3</span>
-                <input type="checkbox">
-            </div>            
-            <div class="order_type">
-                <span>Тип 4</span>
-                <input type="checkbox">
-            </div>            
-            <div class="order_type">
-                <span>Тип 5</span>
-                <input type="checkbox">
-            </div>            
-            <div class="order_type">
-                <span>Тип 6</span>
-                <input type="checkbox">
-            </div>                     
+        <div id="order_main">
+            <div id="order_type_main">
+                <div class="order_type">
+                    <span>Тип 1</span>
+                    <input type="checkbox">
+                </div>            
+                <div class="order_type">
+                    <span>Тип 2</span>
+                    <input type="checkbox">
+                </div>            
+                <div class="order_type">
+                    <span>Тип 3</span>
+                    <input type="checkbox">
+                </div>            
+                <div class="order_type">
+                    <span>Тип 4</span>
+                    <input type="checkbox">
+                </div>            
+                <div class="order_type">
+                    <span>Тип 5</span>
+                    <input type="checkbox">
+                </div>            
+                <div class="order_type">
+                    <span>Тип 6</span>
+                    <input type="checkbox">
+                </div>                     
+            </div>
+    
+            <div id="order_info_main">
+                <input type="text" placeholder="ФИО">
+                <input type="text" placeholder="Адрес">
+                <input type="text" placeholder="Почтовый индекс">
+                <input type="tel" placeholder="Номер телефона">
+                <input type="email" placeholder="Эл.адрес">
+                <input type="text" placeholder="Дата">
+                <input type="text" placeholder="Время">
+            </div>
         </div>
 
-        <div id="order_info_main">
-            <input type="text" placeholder="ФИО">
-            <input type="text" placeholder="Адрес">
-            <input type="text" placeholder="Почтовый индекс">
-            <input type="tel" placeholder="Номер телефона">
-            <input type="email" placeholder="Эл.адрес">
-            <input type="text" placeholder="Дата">
-            <input type="text" placeholder="Время">
-        </div>
 
         <div id="order_buttons">
             <button>Создать заказ</button>

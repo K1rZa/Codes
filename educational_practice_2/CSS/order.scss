@@ -1,0 +1,38 @@
+@import "./mixin.scss";
+
+main{
+    @include flex-center;
+}
+#order_buttons{
+    @include flex-center;
+    width: 60%;
+    flex-direction: column;
+    @include create-button;
+}
+#order_main{
+    @include flex-center;
+    width: 100%;
+    padding: 2.5% 0;
+}
+#order_info_main, #order_type_main{
+    @include flex-center;
+    flex-direction: column;
+    width: 40%;
+    gap: 1vh;
+    input{
+        height: 4vh;
+    }
+}
+#order_info_main{
+    input{
+        width: 60%;
+    }
+}
+.order_type{
+    @include flex-center;
+    gap: 5%;
+    width: 100%;
+    input{
+        scale: 1.5;
+    }
+}

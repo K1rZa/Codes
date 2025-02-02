@@ -1,3 +1,11 @@
+#company_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
 #main_company_info {
   display: flex;
   flex-direction: column;

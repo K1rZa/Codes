@@ -1,14 +1,10 @@
+@import "./mixin.scss";
+
 main{
     width: 95%;
-    a{
+    @include create-button;
+    a, button{
         width: 20%;
-        height: 5vh;
-        background-color: green;
-        margin: 1vh 0;
-        border-radius: 7.5px;
-        &:hover{
-            background-color: red;
-        }
     }
 }
 #past_orders{

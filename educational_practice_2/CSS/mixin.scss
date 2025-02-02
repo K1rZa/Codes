@@ -3,3 +3,16 @@
     justify-content: center;
     align-items: center;
 }
+@mixin create-button{
+    a, button{
+        width: 40%;
+        height: 5vh;
+        background-color: green;
+        margin: 1vh 0;
+        border-radius: 7.5px;
+        border: none;
+        &:hover{
+            background-color: red;
+        }
+    }
+}
