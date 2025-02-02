@@ -1,3 +1,7 @@
+$background-color-1:rgb(68, 68, 68);
+$background-color-2:rgb(30, 30, 30);
+$accent-color:rgb(220, 0, 0);
+
 @mixin flex-center{
     display: flex;
     justify-content: center;
@@ -7,12 +11,13 @@
     a, button{
         width: 40%;
         height: 5vh;
-        background-color: green;
+        background-color: $background-color-2;
         margin: 1vh 0;
         border-radius: 7.5px;
         border: none;
+        color: white;
         &:hover{
-            background-color: red;
+            background-color: $accent-color;
         }
     }
 }

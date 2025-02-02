@@ -4,6 +4,9 @@
     @include flex-center;
     flex-direction: column;
     width: 100%;
+    background-color: $background-color-1;
+    border-radius: 10px;
+    margin-bottom: 2.5vh;
 }
 #main_company_info{
     display: flex;

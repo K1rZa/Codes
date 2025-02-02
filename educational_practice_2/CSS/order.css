@@ -14,21 +14,24 @@ main {
 #order_buttons a, #order_buttons button {
   width: 40%;
   height: 5vh;
-  background-color: green;
+  background-color: rgb(30, 30, 30);
   margin: 1vh 0;
   border-radius: 7.5px;
   border: none;
+  color: white;
 }
 #order_buttons a:hover, #order_buttons button:hover {
-  background-color: red;
+  background-color: rgb(220, 0, 0);
 }
 
 #order_main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 80%;
   padding: 2.5% 0;
+  background-color: rgb(68, 68, 68);
+  border-radius: 10px;
 }
 
 #order_info_main, #order_type_main {
@@ -36,15 +39,16 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 40%;
+  width: 60%;
   gap: 1vh;
 }
 #order_info_main input, #order_type_main input {
   height: 4vh;
+  border-radius: 5px;
 }
 
 #order_info_main input {
-  width: 60%;
+  width: 70%;
 }
 
 .order_type {

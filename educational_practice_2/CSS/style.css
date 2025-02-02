@@ -16,11 +16,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: white;
   text-decoration: none;
+  background-color: rgb(30, 30, 30);
 }
 a:hover {
-  background-color: green;
+  background-color: rgb(220, 0, 0);
 }
 
 body {
@@ -28,6 +29,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-image: url(../assets/background_main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  color: white;
 }
 
 header {
@@ -47,7 +53,6 @@ nav {
 .nav_buttons {
   width: 20%;
   height: 100%;
-  background-color: red;
 }
 
 main {
@@ -57,6 +62,10 @@ main {
   flex-direction: column;
   width: 80%;
   margin: 2.5% 0 5% 0;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  padding: 5% 2.5%;
+  border-radius: 60px;
 }
 
 footer {
@@ -66,6 +75,7 @@ footer {
   height: 15vh;
   justify-content: space-evenly;
   align-items: center;
+  background-color: rgb(30, 30, 30);
 }
 
 .footer_contacts, .footer_useful_links {

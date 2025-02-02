@@ -11,21 +11,24 @@ main{
 }
 #order_main{
     @include flex-center;
-    width: 100%;
+    width: 80%;
     padding: 2.5% 0;
+    background-color: $background-color-1;
+    border-radius: 10px;
 }
 #order_info_main, #order_type_main{
     @include flex-center;
     flex-direction: column;
-    width: 40%;
+    width: 60%;
     gap: 1vh;
     input{
         height: 4vh;
+        border-radius: 5px;
     }
 }
 #order_info_main{
     input{
-        width: 60%;
+        width: 70%;
     }
 }
 .order_type{
