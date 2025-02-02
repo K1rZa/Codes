@@ -2,6 +2,7 @@ import "./App.scss"
 import React, { useRef } from 'react'
 import { useDoubleTap } from 'use-double-tap'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { useState, useEffect } from 'react'
 
 function App() {
   const buttonsScreen_Ref = useRef(null)
@@ -27,9 +28,25 @@ function App() {
       buttonsScreen_Ref.current.style.display = 'none'
     }
   }
+
   const doubleTap = useDoubleTap(() => {
     goToButtonsScreen()
   })
+
+
+
+  const [isOpen, setIsOpen] = useState(false);
+  const handleKeyPress = (event) => {
+    if (event.code === 'Space') {
+      setIsOpen((prev) => !prev);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyPress);
+    return () => {
+      window.removeEventListener('keydown', handleKeyPress);
+    };
+  }, []);
   
   class ExercisePart extends React.Component{
     render(){
@@ -54,7 +71,26 @@ function App() {
   }
 
   return (
+    
     <div className="App">
+      {isOpen && (
+        <div style={{
+          width: '260px',
+          height: '80px',
+          backgroundColor: 'grey',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          color: 'white',
+          textAlign: 'center',
+          position: 'absolute'
+        }}>
+          Пример уведомления об изменениях
+        </div>
+      )}
+
+
+
       <div ref={buttonsScreen_Ref} id="buttonsScreen">
         <button id="groupMainButton">"Группа"</button>
         <button id="scheduleMainButton" onClick={goToSchedule}>Расписание</button>
