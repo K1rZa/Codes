@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация</title>
+    <link href="../CSS/register.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <div id="register_form_main">
-            <h1>Регистрация</h1>
-
-            <div id="register_form">
-                <form action="" onsubmit="window.open('./account.html')">
-                    <input type="text" placeholder="Логин" required>
-                    <input type="password" placeholder="Пароль" minlength="12" required>
-                    <input type="text" placeholder="ФИО" required>
-                    <input type="tel" placeholder="Номер телефона" required>
-                    <input type="email" placeholder="Электронная почта" required>  
-                    <input type="submit">
-                </form>
-            </div>
-
-            <div id="register_useful_links">
-                <a href="./login.html">У меня уже есть аккаунт</a>
-                <a href="../index.html">На главную страницу</a>
-            </div>
-        </div>
-    </main>
+        <main>
+            <article class="reg-form-main">
+                <h1>Регистрация</h1>
+                <div class="reg-form-name">
+                    <input class="reg-form-input" type="text" placeholder="  Логин" required> 
+                </div>
+                <div class="reg-form-email">
+                    <input class="reg-form-input" type="email" placeholder="  Эл.почта" required>
+                </div>
+                <div class="reg-form-password">
+                    <input class="reg-form-input" type="password" placeholder="  Пароль" required>
+                </div>
+                <a class="reg-form-info" href="./login.html">У меня уже есть аккаунт</a>
+                <div class="reg-form-button">
+                    <input class="reg-form-button-main" type="button" value="Зарегистрироваться">
+                    <a class="reg-form-back-home" href="../index.html">На главную</a>
+                </div>
+            </article>
+        </main>
 </body>
 </html>

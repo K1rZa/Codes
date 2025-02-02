@@ -18,7 +18,7 @@ main{
     gap: 1.5vh;
     span{
         @include flex_center;
-        background-color: blue;
+        background-color: $background-color-2;
         width: 60%;
         height: 4vh;
         border-radius: 7.5px;
